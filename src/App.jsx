@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div>Appda</div>
+    <div>App</div>
   )
 }
 
