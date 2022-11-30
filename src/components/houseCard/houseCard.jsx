@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import telegram from "../../asset"
+
 
 const HouseCard = () => {
   return (
