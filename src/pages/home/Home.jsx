@@ -1,10 +1,10 @@
 import React from "react";
-import './home.scss'
+import "./home.scss";
 function Home() {
   return (
     <main>
       <div className="container">
-        <h1>Home</h1>
+        <h3>Home</h3>
       </div>
     </main>
   );

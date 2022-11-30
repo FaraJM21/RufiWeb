@@ -1,10 +1,9 @@
 import React from "react";
 import "./header.scss";
-import { AiFillPlusCircle } from "react-icons/ai";
 import { BsHeart } from "react-icons/bs";
 import Selects from "../select/Select";
-import logo from "../../assets/Vector.svg";
-
+import logo from "../../assets/userprofile.svg";
+import plus from "../../assets/plus.svg";
 function Header() {
   return (
     <header>
@@ -19,9 +18,7 @@ function Header() {
 
           <div className="header-right">
             <div className="announcement">
-              <span>
-                <AiFillPlusCircle />
-              </span>
+              <img src={plus} alt="404" />
               <p>Разместить обьявление</p>
             </div>
 
