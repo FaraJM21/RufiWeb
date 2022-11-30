@@ -1,7 +1,7 @@
 import React from "react";
-import { HouseCard, Search } from "../../components";
+import { Search } from "../../components";
+import HouseCard from "../../components/houseCard/houseCard";
 import "./style.scss";
-
 function Apartment() {
   return (
     <div className="main">
