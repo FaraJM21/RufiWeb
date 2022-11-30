@@ -6,9 +6,9 @@ const handleChange = (value) => {
 const Selects = () => (
   <Select
     defaultValue="Ru"
-    
+    size="small"
     style={{
-      width: 120,
+      width: 90,
     }}
     onChange={handleChange}
     options={[
