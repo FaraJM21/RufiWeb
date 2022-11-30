@@ -1,0 +1,100 @@
+.offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .offer-title {
+    h3 {
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 34px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 29px;
+      padding: 15px 0;
+    }
+  }
+
+  #row {
+    width: 100%;
+    padding: 40px 0;
+    row-gap: 20px;
+  }
+
+  #col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-color: red;
+  }
+
+  .card {
+    width: 300px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .info {
+      width: 100%;
+      //   height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px 20px;
+      background: #f1f1f1;
+
+      h4 {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 29px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 0.7rem;
+        line-height: 29px;
+      }
+    }
+
+    .about {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+    }
+  }
+
+  .show {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    button {
+      width: 10.8rem;
+      height: 60px;
+      text-align: center;
+      background: #d9d9d9;
+      border-radius: 35px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      line-height: 29px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ededed;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.selects {
+  height: 80px;
+  .ant-select-selector {
+    width: 120px !important;
+    height: 80px !important;
+    padding: 24px 11px !important;
+    position: relative;
+    border-right: 1px solid#D9D9D9 !important;
+    font-size: 0.8rem !important;
+    text-align: center;
+    border-radius: 1px !important;
+  }
+}

@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { BsHeart } from "react-icons/bs";
 import Selects from "../select/Select";
 import logo from "../../assets/img/userprofile.svg";
 import plus from "../../assets/img/plus.svg";
 function Header() {
+  const [color, setColor] = useState("");
+
+  const [scroll, setScroll] = useState("");
+
+  const controlNavbar = () => {
+    if (window.scrollY > 10) {
+      setScroll("rgba(0, 0, 0, 0.24) 0px 3px 8px");
+      setColor(" hsla(0, 0%, 97%, 0.949)");
+    } else if (window.scrollY === 0) {
+      setScroll("");
+      setColor("");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
+
   return (
-    <header>
+    <header
+      style={{ boxShadow: scroll, transition: "0.1s", background: color }}
+    >
       <div className="container">
         <div className="nav">
           <div className="header-left">
