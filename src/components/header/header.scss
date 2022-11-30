@@ -3,7 +3,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 200;
 
   .nav {
     width: 100%;
@@ -35,6 +37,7 @@ header {
 .header-right {
   display: flex;
   height: 100%;
+  gap: 30px;
   align-items: center;
 }
 
@@ -43,7 +46,8 @@ header {
   height: 60px;
   display: flex;
   gap: 10px;
-  padding: 0 70px;
+  width: 270px;
+  padding: 0 80px;
   justify-content: center;
   align-items: center;
 

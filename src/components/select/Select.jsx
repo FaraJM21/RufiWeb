@@ -1,15 +1,14 @@
 import { Select } from "antd";
 import React from "react";
-import "./select.scss";
+import './select.scss'
 const handleChange = (value) => {
   console.log(`selected ${value}`);
 };
 const Selects = () => (
   <div className="myselect">
     <Select
-      id="select"
       defaultValue="Ru"
-      bordered={false}
+      bordered = {false}
       onChange={handleChange}
       options={[
         {

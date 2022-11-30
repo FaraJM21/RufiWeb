@@ -1,7 +1,7 @@
 import { Select } from "antd";
 import React from "react";
 import "./style.scss";
-import search from "../../assets/search.svg";
+import search from "../../assets/img/search.svg";
 const Search = () => {
   const handleChange = (value) => {
     console.log(`selected ${value}`);

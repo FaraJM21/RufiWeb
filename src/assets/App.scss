@@ -20,7 +20,13 @@ html {
 }
 
 .main {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 80px;
+}
+
+body {
+  width: 100%;
 }
