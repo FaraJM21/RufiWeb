@@ -2,8 +2,8 @@ import React from "react";
 import "./header.scss";
 import { BsHeart } from "react-icons/bs";
 import Selects from "../select/Select";
-import logo from "../../assets/userprofile.svg";
-import plus from "../../assets/plus.svg";
+import logo from "../../assets/img/userprofile.svg";
+import plus from "../../assets/img/plus.svg";
 function Header() {
   return (
     <header>
