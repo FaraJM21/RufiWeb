@@ -6,6 +6,10 @@ header {
   position: fixed;
   top: 0;
   z-index: 200;
+  background: linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: left;
 
   .nav {
     width: 100%;

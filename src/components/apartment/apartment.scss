@@ -1,0 +1,176 @@
+.apartment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apartment-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+
+  .left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    h3 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 34px;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+
+    p {
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      line-height: 24px;
+    }
+  }
+}
+
+.apartment-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+
+  .flat-card {
+    width: 16rem;
+    height: 221px;
+    .swiper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+        border: #878585 solid 2px;
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #878585;
+      }
+    }
+
+    .swiper-slide {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      span {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 1.2rem;
+        cursor: pointer;
+        // color: red;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      cursor: pointer;
+      transition: 0.3s;
+      object-fit: cover;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .info {
+      height: 100%;
+      background: #ebebeb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 5px 0px;
+      text-align: center;
+      gap: 15px;
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 24px;
+      }
+
+      .underground {
+        font-size: 0.8rem;
+      }
+      .price {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 24px;
+      }
+    }
+
+    .info-top {
+      width: 100%;
+      text-align: center;
+    }
+
+    .location {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .about,
+    .enroll {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+
+      button {
+        width: 5.1rem;
+        background: #d9d9d9;
+        border-radius: 23.5px;
+      }
+    }
+
+    .enroll {
+      height: 48px;
+      align-items: center;
+      button {
+        height: 100%;
+
+        &:hover {
+          background: #c0bebe;
+        }
+
+        &:active {
+          background: #d9d9d9;
+        }
+      }
+    }
+  }
+}

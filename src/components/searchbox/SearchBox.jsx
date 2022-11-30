@@ -2,10 +2,10 @@ import { DownOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
 import SelectGroups from "../selectgroups/SelectGroups";
 import search from "../../assets/img/searchwhite.svg";
-import './searchbox.scss'
+import "./searchbox.scss";
 
 function SearchBox() {
-    const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <div className="inner">
       <p>Более 5900 объявлений с продажей/ арендой домов, квартир</p>
