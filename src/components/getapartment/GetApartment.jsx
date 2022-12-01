@@ -2,8 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import "../apartment/apartment.scss";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, EffectFade } from "swiper";
 import arrow from "../../assets/img/arrow.svg";
 import map from "../../assets/img/map.svg";
 import location from "../../assets/img/location.svg";
@@ -34,12 +35,13 @@ function Apartment() {
               <Swiper
                 loop={true}
                 pagination={true}
+                effect={"fade"}
                 slidesPerView={1}
                 autoplay={{
-                  delay: 2000,
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay, Pagination, EffectFade]}
                 className="mySwiper"
               >
                 {item.img.map((picture, index) => {

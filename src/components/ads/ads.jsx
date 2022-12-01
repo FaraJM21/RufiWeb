@@ -1,4 +1,5 @@
 import { Select } from "antd";
+import React from "react";
 import map from "../../assets/img/map.svg";
 import "./style.scss";
 const Ads = () => {
