@@ -11,6 +11,7 @@ import location from "../../assets/img/location.svg";
 import arrowleft from "../../assets/img/arrowleft.svg";
 import { flat } from "../../data/data";
 import { HeartOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 function Apartment() {
   return (
     <div className="apartment">
@@ -23,7 +24,7 @@ function Apartment() {
         <div className="right">
           <img src={map} alt="404" />
           <p>Показать на карте</p>
-          <p>Смотреть все</p>
+          <Link to={'/apartments'}>Смотреть все</Link>
           <img src={arrowleft} alt="404" />
         </div>
       </div>

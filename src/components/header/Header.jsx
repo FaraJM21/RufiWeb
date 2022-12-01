@@ -4,6 +4,7 @@ import { BsHeart } from "react-icons/bs";
 import Selects from "../select/Select";
 import logo from "../../assets/img/userprofile.svg";
 import plus from "../../assets/img/plus.svg";
+import { Link } from "react-router-dom";
 function Header() {
   const [color, setColor] = useState("");
   const [size, setSize] = useState("0%,100%");
@@ -40,8 +41,11 @@ function Header() {
       <div className="container">
         <div className="nav">
           <div className="header-left">
-            <h3 className="logo">Logo</h3>
-            <p>Квартиры</p>
+            <Link to={"/"}>
+              {" "}
+              <h3 className="logo">Logo</h3>
+            </Link>
+            <Link to={"/apartments"}>Квартиры</Link>
             <p>Участки</p>
             <p>Новостройки</p>
           </div>
