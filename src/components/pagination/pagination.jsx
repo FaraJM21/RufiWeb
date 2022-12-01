@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Pagination as PaginationAnt } from "antd";
-
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentData, setCurrentData] = useState();

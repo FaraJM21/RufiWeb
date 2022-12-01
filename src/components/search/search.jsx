@@ -2,9 +2,7 @@ import React from "react";
 import "./style.scss";
 import search from "../../assets/img/search.svg";
 import arrow from "../../assets/img/arrow.svg";
-
 import { Dropdown } from "antd";
-
 const Search = () => {
   const items = [
     { label: "item 1", key: "item-1" }, // remember to pass the key prop

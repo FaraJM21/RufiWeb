@@ -1,9 +1,7 @@
 import { Select } from "antd";
 import map from "../../assets/img/map.svg";
 import "./style.scss";
-
 const Ads = () => {
-
   return (
     <section className="ads">
       <div className="wrapper">

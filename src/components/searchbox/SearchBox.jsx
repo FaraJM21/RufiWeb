@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import SelectGroups from "../selectgroups/SelectGroups";
 import search from "../../assets/img/searchwhite.svg";
 import "./searchbox.scss";
-
 function SearchBox() {
   const [showDropdown, setShowDropdown] = useState(false);
   return (

@@ -8,7 +8,6 @@ function Header() {
   const [color, setColor] = useState("");
   const [size, setSize] = useState("0%,100%");
   const [scroll, setScroll] = useState("");
-
   const controlNavbar = () => {
     if (window.scrollY > 10) {
       setScroll("rgba(0, 0, 0, 0.24) 0px 3px 8px");
