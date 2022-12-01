@@ -1,5 +1,5 @@
 import React from "react";
-import { Ads, HouseCard, Search } from "../../components";
+import { Ads, HouseCard, Pagination, Search } from "../../components";
 import "./style.scss";
 function Apartment() {
   return (
@@ -10,6 +10,7 @@ function Apartment() {
         <HouseCard />
         <HouseCard />
         <HouseCard />
+        <Pagination/>
       </div>
     </div>
   );
