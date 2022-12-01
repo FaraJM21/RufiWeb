@@ -2,7 +2,6 @@ import { Select } from "antd";
 import React from "react";
 import map from "../../assets/img/map.svg";
 import "./style.scss";
-
 const Ads = () => {
   return (
     <section className="ads">
@@ -11,27 +10,25 @@ const Ads = () => {
           <p className="count">6 032 объявлений найдено</p>
           <p className="sort">Сортировать:</p>
           <Select
-            defaultValue="lucy"
-            style={{ width: 120 }}
+            defaultValue="newOffer"
             onChange={""}
             className="select"
             options={[
               {
-                value: "jack",
-                label: "Jack",
+                value: "newOffer",
+                label: "Новые предложения ",
               },
               {
-                value: "lucy",
-                label: "Lucy",
+                value: "option 1",
+                label: "option 1",
               },
               {
-                value: "disabled",
-                disabled: true,
-                label: "Disabled",
+                value: "option 2",
+                label: "option 2",
               },
               {
-                value: "Yiminghe",
-                label: "yiminghe",
+                value: "option 3",
+                label: "option 3",
               },
             ]}
           />

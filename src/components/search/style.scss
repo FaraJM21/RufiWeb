@@ -1,35 +1,106 @@
 .search {
   .wrapper {
+    margin: 0 auto;
     display: flex;
     width: 100%;
     max-width: 1174px;
+    height: 68px;
     background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 35px;
-    height: 70px;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 
-    p {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
+    .regions {
+      max-width: 123px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      border: none;
+    }
+    .input {
       display: flex;
       flex-direction: column;
-      span {
-        font-family: "Montserrat";
-        font-style: normal;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      width: 100%;
+      max-width: 320px;
+      color: rgba(0, 0, 0, 0.5);
+      p {
+        height: fit-content;
+        border: none;
+        padding: 0;
+      }
+      input {
         font-weight: 400;
+        width: 100%;
+        max-width: 280px;
         font-size: 18px;
         line-height: 22px;
         color: rgba(0, 0, 0, 0.5);
+        border: none;
+        &:focus {
+          outline: none;
+        }
       }
-      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    select,
+    p,
+    .regions,
+    .input,
+    .search-icon {
+      padding: 0 20px;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+    select {
+      max-width: 140px;
+    }
+
+    .big-select {
+      max-width: 230px;
+    }
+
+    .search-icon {
+      background-color: #d9d9d9;
+      width: 44px;
+      height: 44px;
+      margin: 0 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    .price-field{
+      display: flex;
+      height: 100%;
+      gap: 12px;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      align-items: center;
+      padding: 0 20px;
+      img{
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 }
