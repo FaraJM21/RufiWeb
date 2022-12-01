@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.scss";
 import { Apartment, Offer, SearchBox } from "../../components/index";
+import GetApartment from "../../components/getapartment/GetApartment";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
           <SearchBox />
           <Offer />
           <Apartment />
+          <GetApartment />
         </div>
       </div>
     </div>
