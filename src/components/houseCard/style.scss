@@ -1,4 +1,98 @@
-// .houseCard {
-//   .wrapper {
-//   }
-// }
+.houseCard {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    .images {
+      display: block;
+      display: flex;
+    }
+    .small-images {
+      display: flex;
+      flex-direction: column;
+      margin-left: 12px;
+      gap: 12px;
+      .img {
+        width: 100%;
+        max-width: 139px;
+        min-width: 119px;
+        height: 90px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .content {
+    display: block;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 22px;
+    }
+    .description {
+      margin-bottom: 21px;
+    }
+    .description p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .text {
+      max-width: 600px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150.9%;
+      margin-bottom: 21px;
+    }
+    .icons {
+      display: flex;
+      gap: 15px;
+      .icon {
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .phone {
+        border-radius: 30px;
+      }
+      .telegram,
+      .like {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 34px;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
+    }
+    .square {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .bottom {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

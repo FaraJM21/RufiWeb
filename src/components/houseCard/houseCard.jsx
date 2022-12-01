@@ -1,24 +1,35 @@
 import React from "react";
 import "./style.scss";
-
-
+import telegram from "../../assets/img/telegram.svg";
+import like from "../../assets/img/like.svg";
+import HouseCardCarousel from "../houseCardCarousel/houseCardCarousel";
+import house from "../../assets/img/house.jpg";
 const HouseCard = () => {
   return (
     <section className="houseCard">
       <div className="wrapper">
         {/*  */}
         <div className="images">
-          <div className="carousel">d</div>
+          <HouseCardCarousel />
           <div className="small-images">
-            <div className="img">1</div>
-            <div className="img">2</div>
-            <div className="img">3</div>
+            <div
+              style={{ backgroundImage: `url(${house})` }}
+              className="img"
+            ></div>
+            <div
+              style={{ backgroundImage: `url(${house})` }}
+              className="img"
+            ></div>
+            <div
+              style={{ backgroundImage: `url(${house})` }}
+              className="img"
+            ></div>
           </div>
         </div>
 
         <div className="content">
           <p className="title">2-комнатная квартира, 45м2</p>
-          <div className="descriptiion">
+          <div className="description">
             <p>4 этаж из 9</p>
             <p>Юнусабадский район, 10 кв-л</p>
             <p>Метро Туркистон 4 мин</p>
@@ -28,11 +39,23 @@ const HouseCard = () => {
             для жителей ЖК . Прекрасный, готовый арендный бизнес!
           </p>
           <div className="icons">
-            <div className="phone">Показать телефон</div>
-            <div className="telegram"></div>
+            <div className="icon phone">Показать телефон</div>
+            <div className="icon telegram">
+              <img src={telegram} alt="" />
+            </div>
+            <div className="icon like">
+              <img src={like} alt="" />
+            </div>
           </div>
         </div>
-        <div className="price">3</div>
+
+        <div className="price">
+          <div className="top">
+            <p className="title">52 482$</p>
+            <p className="square">2 482$ за м2</p>
+          </div>
+          <div className="bottom">10 июня 2022</div>
+        </div>
       </div>
     </section>
   );

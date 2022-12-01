@@ -1,3 +1,3 @@
 export {default as Header} from './header/Header'
 export {default as Search} from "./search/search"
-export {default as houseCard} from "./houseCard/houseCard"
+export {default as HouseCard} from "./houseCard/houseCard"
