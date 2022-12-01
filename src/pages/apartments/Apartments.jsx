@@ -1,12 +1,15 @@
 import React from "react";
-import Search from "../../components/search/search";
+import { Ads, HouseCard, Search } from "../../components";
 import "./style.scss";
-
 function Apartment() {
   return (
     <div className="main">
       <div className="container">
-        <Search/>
+        <Search />
+        <Ads />
+        <HouseCard />
+        <HouseCard />
+        <HouseCard />
       </div>
     </div>
   );
