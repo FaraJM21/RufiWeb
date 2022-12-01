@@ -11,4 +11,4 @@ export { default as SpecialOffer } from "./specialoffer/SpecialOffer";
 export { default as FlatCard } from "./flatcard/FlatCard";
 export { default as Footer } from "./footer/Footer";
 export { default as Pagination } from "./pagination/pagination";
-export {default as Ads } from "./ads/Ads";
+export {default as Ads } from "./ads/ads";

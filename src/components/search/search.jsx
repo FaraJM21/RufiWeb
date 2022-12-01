@@ -2,12 +2,7 @@ import React from "react";
 import "./style.scss";
 import search from "../../assets/img/search.svg";
 import arrow from "../../assets/img/arrow.svg";
-import { Dropdown } from "antd";
 const Search = () => {
-  const items = [
-    { label: "item 1", key: "item-1" }, // remember to pass the key prop
-    { label: "item 2", key: "item-2" },
-  ];
   return (
     <section className="search">
       <div className="wrapper">
@@ -32,12 +27,10 @@ const Search = () => {
           <option value="4">4</option>
         </select>
 
-        <Dropdown menu={{ items }} trigger="click">
-          <div className="price-field">
-            <span>Цена</span>
-            <img src={arrow} alt="" />
-          </div>
-        </Dropdown>
+        <div className="price-field">
+          <span>Цена</span>
+          <img src={arrow} alt="" />
+        </div>
         <div className="search-icon">
           <img src={search} alt="" />
         </div>
