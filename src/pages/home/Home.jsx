@@ -1,7 +1,14 @@
 import React from "react";
 import "./home.scss";
-import { Apartment, Offer, SearchBox } from "../../components/index";
-import GetApartment from "../../components/getapartment/GetApartment";
+import {
+  Apartment,
+  ApartmentCard,
+  Offer,
+  SearchBox,
+  GetApartment,
+  SpecialOffer,
+  FlatCard,
+} from "../../components/index";
 
 function Home() {
   return (
@@ -12,6 +19,9 @@ function Home() {
           <Offer />
           <Apartment />
           <GetApartment />
+          <ApartmentCard />
+          <SpecialOffer/>
+          <FlatCard/>
         </div>
       </div>
     </div>

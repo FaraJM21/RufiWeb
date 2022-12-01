@@ -1,7 +1,7 @@
-import { Select } from 'antd';
-import React from 'react'
-import map from "../../assets/img/map.svg"
-import "./style.scss"
+import { Select } from "antd";
+import React from "react";
+import map from "../../assets/img/map.svg";
+import "./style.scss";
 
 const Ads = () => {
   return (
@@ -43,6 +43,6 @@ const Ads = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Ads
+export default Ads;
