@@ -1,0 +1,43 @@
+.ads {
+  .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .left {
+      .count {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+      }
+      .sort {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      .select {
+        margin-bottom: 40px;
+      }
+    }
+    .right {
+      display: flex;
+      max-width: 148px;
+      width: 100%;
+      justify-content: center;
+      height: 68px;
+      align-items: center;
+      border-radius: 34px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      gap: 6px;
+      cursor: pointer;
+      :active {
+        background-color: red;
+      }
+      img {
+        width: 17px;
+        height: 16px;
+      }
+    }
+  }
+}
