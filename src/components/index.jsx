@@ -6,5 +6,6 @@ export { default as SelectGroups } from "./selectgroups/SelectGroups";
 export { default as Offer } from "./offer/Offer";
 export { default as SearchBox } from "./searchbox/SearchBox";
 export { default as Apartment } from "./apartment/Apartment";
+export {default as Pagination} from "./pagination/pagination"
 export {default as Ads} from "./ads/ads"
 

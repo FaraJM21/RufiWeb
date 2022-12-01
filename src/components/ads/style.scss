@@ -19,6 +19,19 @@
       .select {
         margin-bottom: 40px;
       }
+      .ant-select-selector {
+        width: 100% !important;
+        max-width: 285px !important;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 19px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        height: 50px;
+      }
     }
     .right {
       display: flex;
@@ -31,12 +44,12 @@
       border: 1px solid rgba(0, 0, 0, 0.3);
       gap: 6px;
       cursor: pointer;
-      :active {
-        background-color: red;
-      }
       img {
         width: 17px;
         height: 16px;
+      }
+      &:active {
+        background-color: rgba(0, 0, 0, 0.3);
       }
     }
   }
