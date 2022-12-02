@@ -17,10 +17,6 @@ const Search = () => {
           <p className="input-text">Ташкент</p>
         </div>
 
-        {/* <select name="select" id="">
-          <option value="buy"></option>
-          <option value="rent"></option>
-        </select> */}
         <Select
           defaultValue="buy"
           popupClassName="submenu"
