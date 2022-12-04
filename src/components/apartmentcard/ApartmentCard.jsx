@@ -69,6 +69,56 @@ function ApartmentCard() {
           </div>
         </div>
       </div>
+
+      <div className="simple-card">
+        <div className="cards-title">
+          <h3>Квартиры</h3>
+        </div>
+
+        <div className="card-links">
+          <div className="card-rooms">
+            <p> 1-комнатные</p>
+            <p> 2-комнатные</p>
+            <p>3-комнатные</p>
+            <p>4-комнатные</p>
+            <p> без посредников</p>
+          </div>
+          <div className="card-numbers">
+            <p> 287 </p>
+            <p> 302 </p>
+            <p> 175 </p>
+            <p> 105 </p>
+            <p> 45</p>
+          </div>
+        </div>
+
+        <button>Разместить объявление</button>
+      </div>
+
+      <div className="simple-card">
+        <div className="cards-title">
+          <h3>Новостройки</h3>
+        </div>
+
+        <div className="card-links">
+          <div className="card-rooms">
+            <p>с чистовой отделкой</p>
+            <p>Премиум класс</p>
+            <p>Эконом класс</p>
+            <p>Рядом с метро</p>
+            <p>С парковкой</p>
+          </div>
+          <div className="card-numbers">
+            <p>69</p>
+            <p>34</p>
+            <p>45</p>
+            <p>12</p>
+            <p>53</p>
+          </div>
+        </div>
+
+        <button>Разместить объявление</button>
+      </div>
     </div>
   );
 }

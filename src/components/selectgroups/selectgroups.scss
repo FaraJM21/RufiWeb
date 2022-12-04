@@ -9,5 +9,13 @@
     font-size: 0.8rem !important;
     text-align: center;
     border-radius: 1px !important;
+
+    @media (max-width: 840px) {
+      width: 90px !important;
+    }
+
+    @media (max-width: 630px) {
+      width: 70px !important;
+    }
   }
 }

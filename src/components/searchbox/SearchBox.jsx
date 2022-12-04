@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import SelectGroups from "../selectgroups/SelectGroups";
 import search from "../../assets/img/searchwhite.svg";
 import "./searchbox.scss";
-
+import searchlogo from "../../assets/img/search.svg";
+import settings from "../../assets/img/setting.svg";
 function SearchBox() {
   const [showDropdown, setShowDropdown] = useState(false);
   return (
@@ -48,6 +49,21 @@ function SearchBox() {
           </div>
         </div>
       </div>
+
+      <div className="search-input">
+        <label>Введите город, адресс, район</label>
+        <div className="search-inner">
+          <div className="search">
+            <input type="text" placeholder="Искат..." />
+            <img src={searchlogo} alt="404" />
+          </div>
+
+          <div className="settings">
+            <img src={settings} alt="404" />
+          </div>
+        </div>
+      </div>
+
       <div className="rectangels one"></div>
       <div className="rectangels two"></div>
       <div className="rectangels three"></div>

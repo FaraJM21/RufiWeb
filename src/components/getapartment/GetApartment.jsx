@@ -6,26 +6,17 @@ import "swiper/css/effect-fade";
 import "../apartment/apartment.scss";
 import { Autoplay, Pagination, EffectFade } from "swiper";
 import arrow from "../../assets/img/arrow.svg";
-import map from "../../assets/img/map.svg";
 import location from "../../assets/img/location.svg";
-import arrowleft from "../../assets/img/arrowleft.svg";
 import { flat } from "../../data/data";
 import { HeartOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
-function Apartment() {
+import MainSwiper from "../mainswiper/MainSwiper";
+function GetApartment() {
   return (
-    <div className="apartment">
+    <div className="apartment" style={{marginTop:'10%'}}>
       <div className="apartment-title">
         <div className="left">
           <h3>Снять квартиру</h3>
           <img src={arrow} alt="404" />
-        </div>
-
-        <div className="right">
-          <img src={map} alt="404" />
-          <p>Показать на карте</p>
-          <Link to={"/apartments"}>Смотреть все</Link>
-          <img src={arrowleft} alt="404" />
         </div>
       </div>
 
@@ -39,16 +30,16 @@ function Apartment() {
                 effect={"fade"}
                 slidesPerView={1}
                 autoplay={{
-                  delay: 3000,
+                  delay: 2000,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay, Pagination, EffectFade]}
-                className="mySwiper"
+                className="apartmentSwiper"
               >
                 {item.img.map((picture, index) => {
                   return (
-                    <SwiperSlide>
-                      <img src={picture} alt="404" key={index} />
+                    <SwiperSlide key={index} className="apartmentSwiper-slide">
+                      <img src={picture} alt="404" />
                       <HeartOutlined />
                     </SwiperSlide>
                   );
@@ -85,8 +76,10 @@ function Apartment() {
           );
         })}
       </div>
+
+      <MainSwiper />
     </div>
   );
 }
 
-export default Apartment;
+export default GetApartment;
