@@ -1,0 +1,66 @@
+.info-text {
+  width: 100%;
+  margin-top: 50px;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 172.9%;
+  }
+}
+
+.charasteristics {
+  width: 100%;
+  margin-top: 50px;
+  .table-box {
+    width: 100%;
+    height: 549px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .line {
+      width: 90%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        width: 49%;
+
+        p {
+          color: rgba(0, 0, 0, 0.7);
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+      .info {
+        width: 49%;
+
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+    .bottomline {
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.apartment-location {
+  width: 100%;
+  margin-top: 50px;
+
+  .map {
+    width: 100%;
+    height: 507px;
+    background: #d9d9d9;
+  }
+}
