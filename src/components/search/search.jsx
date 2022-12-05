@@ -43,7 +43,7 @@ const Search = () => {
           defaultValue="buy"
           popupClassName="submenu"
           dropdownStyle={{ backgroundColor: "white" }}
-          onChange={() => {}}
+          onChange={(e)=> handleChange(e.target.value)}
           options={[
             {
               value: "buy",
@@ -137,7 +137,7 @@ const Search = () => {
       <div className="mobile">
         <input type="text" placeholder="Адресс, метро, район " />
         <Dropdown menu={{ items }} trigger="click">
-          <a>Фильтры</a>
+          <p>Фильтры</p>
         </Dropdown>
       </div>
     </section>

@@ -29,7 +29,7 @@
   border-radius: 5px;
   margin-top: 2%;
   text-align: start;
-  justify-content: start;
+  justify-content: flex-start;
   display: flex;
   align-items: center;
   transition: 0.2s;
@@ -175,10 +175,10 @@
   align-items: flex-start;
   gap: 15px;
 
-  img{
+  img {
     transition: 0.2s;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
   }
@@ -194,7 +194,7 @@
     height: 52px;
     display: flex;
     gap: 20px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     img {
       width: 20px;
@@ -300,8 +300,6 @@
     left: -10%;
   }
 
-  
-
   .inner {
     h2 {
       font-size: 1.8rem;
@@ -348,15 +346,15 @@
   }
 }
 
-
-@media (max-width:400px){
-  .inner{
+@media (max-width: 400px) {
+  .inner {
     height: 700px;
   }
-  .one, .three,.four,.two{
+  .one,
+  .three,
+  .four,
+  .two {
     width: 100px;
     height: 120px;
   }
-
-  
 }
