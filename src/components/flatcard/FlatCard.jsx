@@ -1,7 +1,7 @@
 import React from "react";
 function FlatCard() {
   return (
-    <div className="apartmentCard">
+    <div className="apartmentCard" style={{ marginTop: "100px" }}>
       <div className="cards">
         <div className="cards-title">
           <h3>Аренда квартир</h3>
@@ -56,6 +56,56 @@ function FlatCard() {
             <button>Разместить объявление</button>
           </div>
         </div>
+      </div>
+
+      <div className="simple-card">
+        <div className="cards-title">
+          <h3>Квартиры</h3>
+        </div>
+
+        <div className="card-links">
+          <div className="card-rooms">
+            <p> 1-комнатные</p>
+            <p> 2-комнатные</p>
+            <p>3-комнатные</p>
+            <p>4-комнатные</p>
+            <p> без посредников</p>
+          </div>
+          <div className="card-numbers">
+            <p> 287 </p>
+            <p> 302 </p>
+            <p> 175 </p>
+            <p> 105 </p>
+            <p> 45</p>
+          </div>
+        </div>
+
+        <button>Разместить объявление</button>
+      </div>
+
+      <div className="simple-card">
+        <div className="cards-title">
+          <h3>Новостройки</h3>
+        </div>
+
+        <div className="card-links">
+          <div className="card-rooms">
+            <p> Юнусабадский </p>
+            <p> Яшнабадский </p>
+            <p> Чиланзарский</p>
+            <p>Мирзо-Улугбекский</p>
+            <p>Мирабадский</p>
+          </div>
+          <div className="card-numbers">
+            <p>69</p>
+            <p>34</p>
+            <p>45</p>
+            <p>12</p>
+            <p>53</p>
+          </div>
+        </div>
+
+        <button>Разместить объявление</button>
       </div>
     </div>
   );

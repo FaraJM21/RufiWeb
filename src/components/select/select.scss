@@ -1,4 +1,7 @@
 .myselect {
+  @media (max-width: 736px) {
+    display: none;
+  }
   .ant-select-selector {
     position: relative;
     border: 2px solid rgba(0, 0, 0, 0.3) !important;
@@ -9,3 +12,64 @@
     line-height: 20px !important;
   }
 }
+
+
+// @media (max-width: 1091px) {
+//   .header-left {
+//     gap: 30px;
+//   }
+
+//   .announcement {
+//     width: 200px;
+
+//     p {
+//       font-size: 0.8rem;
+//     }
+//     img {
+//       width: 20px;
+//       height: 20px;
+//       padding: 0 0;
+//     }
+//   }
+// }
+
+// @media (max-width: 961px) {
+//   .announcement {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 736px) {
+//   header {
+//     // background: linear-gradient(#d9d9d9, #d9d9d9);
+//     // background-repeat: no-repeat;
+//     // background-size: 0% 100%;
+//     // background-position-x: left;
+//     //  .nav{
+//     //   justify-content: space-evenly;
+//     //  }
+
+//     .hamburger {
+//       display: block;
+//     }
+
+//     // .logo {
+//     //   position: absolute;
+//     //   left: 5%;
+//     //   bottom: 35%;
+//     //   top: 35%;
+//     //   margin: auto;
+//     // }
+//   }
+
+//   .links {
+//     display: none;
+//   }
+
+//   .language {
+//     gap: 30px;
+//     #plus {
+//       display: block;
+//     }
+//   }
+// }

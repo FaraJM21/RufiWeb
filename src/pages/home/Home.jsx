@@ -20,8 +20,8 @@ function Home() {
           <Apartment />
           <GetApartment />
           <ApartmentCard />
-          <SpecialOffer/>
-          <FlatCard/>
+          <SpecialOffer />
+          <FlatCard />
         </div>
       </div>
     </div>

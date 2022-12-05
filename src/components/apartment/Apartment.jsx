@@ -12,6 +12,8 @@ import arrowleft from "../../assets/img/arrowleft.svg";
 import { flat } from "../../data/data";
 import { HeartOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import MainSwiper from "../mainswiper/MainSwiper";
+
 function Apartment() {
   return (
     <div className="apartment">
@@ -24,10 +26,11 @@ function Apartment() {
         <div className="right">
           <img src={map} alt="404" />
           <p>Показать на карте</p>
-          <Link to={'/apartments'}>Смотреть все</Link>
+          <Link to={"/apartments"}>Смотреть все</Link>
           <img src={arrowleft} alt="404" />
         </div>
       </div>
+    
 
       <div className="apartment-box">
         {flat.map((item, index) => {
@@ -42,13 +45,13 @@ function Apartment() {
                   delay: 2000,
                   disableOnInteraction: false,
                 }}
-                modules={[Autoplay, Pagination,EffectFade]}
-                className="mySwiper"
+                modules={[Autoplay, Pagination, EffectFade]}
+                className="apartmentSwiper"
               >
                 {item.img.map((picture, index) => {
                   return (
-                    <SwiperSlide>
-                      <img src={picture} alt="404" key={index} />
+                    <SwiperSlide key={index} className="apartmentSwiper-slide">
+                      <img src={picture} alt="404" />
                       <HeartOutlined />
                     </SwiperSlide>
                   );
@@ -85,6 +88,10 @@ function Apartment() {
           );
         })}
       </div>
+
+      <MainSwiper/>
+
+   
     </div>
   );
 }

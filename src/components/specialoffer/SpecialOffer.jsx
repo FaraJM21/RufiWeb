@@ -8,6 +8,7 @@ import telegram from "../../assets/img/telegram.svg";
 import like from "../../assets/img/like.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper";
+import SpecialSwiper from "../specialswiper/SpecialSwiper";
 function SpecialOffer() {
   const arr = flarArr;
   return (
@@ -15,7 +16,7 @@ function SpecialOffer() {
       <h3 className="offer-title">Специальные предложения</h3>
 
       <div className="cards-container">
-        {arr.map((item, index) => {
+        {arr.slice(0, 2).map((item, index) => {
           return (
             <div className="offer-card" key={index}>
               <div className="swiper-box">
@@ -33,8 +34,8 @@ function SpecialOffer() {
                 >
                   {item.img.map((picture, index) => {
                     return (
-                      <SwiperSlide>
-                        <img src={picture} alt="404" key={index} />
+                      <SwiperSlide key={index}>
+                        <img src={picture} alt="404" />
                       </SwiperSlide>
                     );
                   })}
@@ -74,6 +75,8 @@ function SpecialOffer() {
           );
         })}
       </div>
+
+      <SpecialSwiper />
     </div>
   );
 }
