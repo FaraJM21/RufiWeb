@@ -7,11 +7,17 @@ import logo from "../../assets/img/userprofile.svg";
 import plus from "../../assets/img/plus.svg";
 import { Link } from "react-router-dom";
 function Header() {
+// HEAD
+  const [color, setColor] = useState("");
+  const [size, setSize] = useState("0%,100%");
+  const [scroll, setScroll] = useState("");
+//
   const [shadow, setShadow] = useState("");
   const [top, setTop] = useState();
   const [isOpen, setOpen] = useState(false);
   let prevScrollpos = window.pageYOffset;
 
+// main
   const controlNavbar = () => {
     let currentScrollPos = window.pageYOffset;
     if (currentScrollPos === 0) {

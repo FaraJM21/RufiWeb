@@ -1,5 +1,5 @@
 import React from "react";
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style.scss";
 import "swiper/css";
@@ -16,7 +16,7 @@ const HouseCardCarousel = () => {
       mousewheel={true}
       autoplay={{ delay: 1000 }}
       speed={600}
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[Navigation, Pagination, Autoplay, EffectFade]}
     >
       <SwiperSlide
         style={{ backgroundImage: `url(${house})` }}

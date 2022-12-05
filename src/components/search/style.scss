@@ -1,16 +1,29 @@
 .search {
+  @media (max-width: 1120px) {
+    .ant-select-selector,
+    .price-field span,
+    .regions,
+    .input-text,
+    .input input {
+      font-size: 16px !important;
+    }
+  }
+
   .wrapper {
     margin: 0 auto;
     display: flex;
     width: 100%;
     max-width: 1174px;
-    height: 68px;
+    height: 70px;
     background: #ffffff;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 35px;
     align-items: center;
     margin-bottom: 30px !important;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     .regions {
       max-width: 123px;
@@ -90,17 +103,139 @@
       }
     }
 
-    .price-field{
+    .price-field {
       display: flex;
       height: 100%;
+      width: 100%;
+      max-width: 110px;
       gap: 12px;
       border-right: 1px solid rgba(0, 0, 0, 0.3);
       align-items: center;
       padding: 0 20px;
-      img{
+      position: relative;
+      cursor: pointer;
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      img {
         width: 10px;
         height: 10px;
       }
+      .dropdown-menu {
+        display: none;
+      }
+      .dropdown-menu.active {
+        display: block;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 120%;
+        background-color: red;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .min,
+        .max {
+          input {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 0 5px;
+            font-weight: 400;
+            height: 26px;
+            font-size: 12px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.7);
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .price-input {
+      width: 100%;
+      max-width: 50px;
+    }
+  }
+  .ant-select-selector {
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0px !important;
+    height: 70px !important;
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+  }
+  .ant-select-single .ant-select-selector .ant-select-selection-search {
+    border-radius: 25.5px;
+    width: 100%;
+    max-width: 330px;
+    position: absolute;
+    left: 0;
+  }
+  .ant-select .ant-select-arrow {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  //mobile version of input component
+  .mobile {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 53px;
+    display: flex;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    margin-bottom: 30px;
+    .sub-menu{
+      background-color: red !important;
+      width: 500px !important;
+      height: 500px !important;
+      display: flex;
+      h1{
+        color: red;
+      }
+    }
+    input {
+      width: 87%;
+      border: none;
+      background-color: transparent;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding-left: 17px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.8);
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .ant-dropdown-trigger {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+
+    .sub-menu{
+      background-color: red !important;
     }
   }
 }
