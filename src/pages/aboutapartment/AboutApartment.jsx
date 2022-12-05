@@ -1,5 +1,5 @@
 import React from 'react'
-
+  
 function AboutApartment() {
   return (
     <div className='main'>
