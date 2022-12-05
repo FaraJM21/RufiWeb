@@ -25,6 +25,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
     max-width: 426px;
     width: 100%;
     height: 46px !important;
@@ -42,25 +44,42 @@
     &:hover {
       background-color: #f0f0f0;
     }
+    @media (max-width: 600px) {
+      height: 40px !important;
+      max-width: 43px !important;
+    }
   }
   .ant-pagination .ant-pagination-item-active {
     border: none !important;
     width: 49px !important;
     height: 46px;
+    margin: 0 !important;
+    padding: 0 !important;
     border-radius: 4px;
     transform: translateY(8px);
+    @media (max-width: 600px) {
+      height: 40px !important;
+      max-width: 43px !important;
+      transform: translateY(4px);
+    }
   }
   .ant-pagination .ant-pagination-item-active a {
     color: white !important;
     width: 49px !important;
     height: 46px;
     display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
     justify-content: center;
     align-items: center;
     background: #000000;
     border-radius: 4px;
     &:hover {
       background: #000000;
+    }
+    @media (max-width: 600px) {
+      height: 40px !important;
+      max-width: 42px !important;
     }
   }
 
@@ -78,8 +97,9 @@
     &:hover {
       background-color: #f0f0f0;
     }
-    &:hover {
-      background-color: red;
+    @media (max-width: 600px) {
+      width: 42px !important;
+      height: 40px !important;
     }
   }
 }

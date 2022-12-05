@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {   AbaoutApartment, Apartments, Home, Layout, Profile } from "./pages";
-import './assets/App.scss'
+import { AboutApartment, Apartments, Home, Layout, Profile } from "./pages";
+import "./assets/App.scss";
 import "swiper/css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/apartments" element={<Apartments />} />
-          <Route path="/aboutapartment/:id" element={<AbaoutApartment />} />
+          <Route path="/aboutapartment/:id" element={<AboutApartment />} />
           <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
