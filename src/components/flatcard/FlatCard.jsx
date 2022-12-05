@@ -41,7 +41,7 @@ function FlatCard() {
           <h3>Квартиры в районах</h3>
         </div>
         <div className="card-inner">
-          <div className="rooms one">
+          <div className="rooms one" style={{justifyContent:'space-between', width:'60%'}}>
             <ul>
               <li> Юнусабадский </li>
               <li> Яшнабадский </li>
