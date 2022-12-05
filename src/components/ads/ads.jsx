@@ -7,7 +7,7 @@ const Ads = () => {
     <section className="ads">
       <div className="wrapper">
         <div className="left">
-          <p className="count">6 032 объявлений найдено</p>
+          <p className="count">6 032 объявлений</p>
           <p className="sort">Сортировать:</p>
           <Select
             defaultValue="newOffer"

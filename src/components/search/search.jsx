@@ -2,14 +2,36 @@ import React, { useState } from "react";
 import "./style.scss";
 import search from "../../assets/img/search.svg";
 import arrow from "../../assets/img/arrow.svg";
-import { Select } from "antd";
+import { Dropdown, Select } from "antd";
 const Search = () => {
+  // for manual dropdown
   const [dropdown, setDropdown] = useState(false);
+
+  //for select
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
+
+  //for ant dropdown
+  const items = [
+    {
+      label: (
+        <div>
+          <div className="sub-menu">
+            <h1>qweqw</h1>
+            <h1>qweqw</h1>
+            <h1>qweqw</h1>
+            <h1>qweqw</h1>
+          </div>
+        </div>
+      ),
+      key: "item-1",
+    }, // remember to pass the key prop
+  ];
+
   return (
     <section className="search">
+      {/* desktop version */}
       <div className="wrapper">
         <p className="regions">Районы</p>
         <div className="input">
@@ -109,6 +131,14 @@ const Search = () => {
         <div className="search-icon">
           <img src={search} alt="" />
         </div>
+      </div>
+
+      {/* mobile version */}
+      <div className="mobile">
+        <input type="text" placeholder="Адресс, метро, район " />
+        <Dropdown menu={{ items }} trigger="click">
+          <a>Фильтры</a>
+        </Dropdown>
       </div>
     </section>
   );

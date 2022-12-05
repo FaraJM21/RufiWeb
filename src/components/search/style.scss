@@ -1,4 +1,14 @@
 .search {
+  @media (max-width: 1120px) {
+    .ant-select-selector,
+    .price-field span,
+    .regions,
+    .input-text,
+    .input input {
+      font-size: 16px !important;
+    }
+  }
+
   .wrapper {
     margin: 0 auto;
     display: flex;
@@ -11,6 +21,9 @@
     align-items: center;
     margin-bottom: 30px !important;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     .regions {
       max-width: 123px;
@@ -93,6 +106,8 @@
     .price-field {
       display: flex;
       height: 100%;
+      width: 100%;
+      max-width: 110px;
       gap: 12px;
       border-right: 1px solid rgba(0, 0, 0, 0.3);
       align-items: center;
@@ -171,5 +186,56 @@
   }
   .ant-select .ant-select-arrow {
     color: rgba(0, 0, 0, 0.8);
+  }
+
+  //mobile version of input component
+  .mobile {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 53px;
+    display: flex;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    margin-bottom: 30px;
+    .sub-menu{
+      background-color: red !important;
+      width: 500px !important;
+      height: 500px !important;
+      display: flex;
+      h1{
+        color: red;
+      }
+    }
+    input {
+      width: 87%;
+      border: none;
+      background-color: transparent;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding-left: 17px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.8);
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .ant-dropdown-trigger {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+
+    .sub-menu{
+      background-color: red !important;
+    }
   }
 }

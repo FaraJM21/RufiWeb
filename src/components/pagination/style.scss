@@ -1,5 +1,26 @@
 .pagination-ant {
   width: 100%;
+  //medisa started
+  @media (max-width: 600px) {
+    max-width: 300px;
+    .ant-pagination {
+      height: 42px !important;
+    }
+    .ant-pagination .ant-pagination-item a {
+      width: 35px !important;
+      height: 42px !important;
+    }
+    .ant-pagination .ant-pagination-item-active {
+      width: 35px !important;
+      height: 42px !important;
+    }
+    button {
+      width: 30px !important;
+      height: 42px !important;
+    }
+  }
+  //media ended
+
   .ant-pagination {
     display: flex;
     justify-content: center;
@@ -61,4 +82,4 @@
       background-color: red;
     }
   }
-  }
+}
