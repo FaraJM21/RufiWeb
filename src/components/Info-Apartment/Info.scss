@@ -1,6 +1,13 @@
+.info-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-text {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
+  height: 300px;
+
   p {
     font-weight: 400;
     font-size: 20px;
@@ -10,7 +17,7 @@
 
 .charasteristics {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
   .table-box {
     width: 100%;
     height: 549px;
@@ -20,10 +27,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+
     .line {
+      position: relative;
+      left: 35px;
       width: 90%;
-      height: 50px;
+      height: 49px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -62,5 +71,24 @@
     width: 100%;
     height: 507px;
     background: #d9d9d9;
+
+    .mapouter {
+      position: relative;
+      text-align: right;
+      width: 100%;
+      height: 100%;
+    }
+    .gm-control-active {
+      background-color: red;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+      height: 100%;
+    }
+    .gmap_iframe {
+      height: 100% !important;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import AboutApartmentTop from "../../components/aboutApartmentTop/AboutApartmentTop";
+import AboutBottomA from "../../components/aboutBottomApartment/AboutBottomA";
 import AboutCenter from "../../components/AboutCenterApartment/AboutCenter";
 import "./AboutApartments.scss";
 
@@ -10,6 +11,8 @@ function AboutApartment() {
         <div className="aboutapartment">
           <AboutApartmentTop />
           <AboutCenter />
+          <div className="arrow-line"></div>
+          <AboutBottomA/>
         </div>
       </div>
     </div>

@@ -1,0 +1,71 @@
+.check-box {
+ margin-top: 40px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  .checkbox-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .css-dev-only-do-not-override-16qxzfl {
+    span {
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .boxes {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .box-left,
+    .box-right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      :nth-child(n) {
+        margin-left: 0;
+      }
+    }
+  }
+  .ant-checkbox-inner {
+    width: 30px;
+    height: 30px;
+    background: #d9d9d9;
+    ::after {
+      border-color: black;
+    }
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    border-color: black;
+    background: black;
+  }
+  .ant-checkbox-checked {
+    width: 30px;
+    height: 30px;
+  }
+  .ant-checkbox-inner::after {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 481px) {
+  .check-box {
+    .checkbox-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .checkbox-line {
+      width: 100%;
+      border: 1px solid rgba(108, 108, 108, 0.3);
+    }
+    .boxes {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  }
+}

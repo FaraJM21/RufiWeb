@@ -4,6 +4,7 @@ import "../Info-Apartment/Info.scss";
 import Location from "../Info-Apartment/Location";
 import Characteristcs from "../Info-Apartment/Characteristcs";
 import Info from "../Info-Apartment/Info";
+
 const AboutCenter = () => {
   const [infoNum, setInfoNum] = useState(1);
 
@@ -33,7 +34,18 @@ const AboutCenter = () => {
           <Location infoNum={infoNum} />
         </div>
       </div>
-      <div className="right-QrCode"></div>
+      <div className="right-QrCode">
+        <div className="div">
+          <p>QR CODE</p>
+        </div>
+        <div className="bottom-line"></div>
+        <div className="QrCode-box">
+          <img
+            src="https://www.investopedia.com/thmb/hJrIBjjMBGfx0oa_bHAgZ9AWyn0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/qr-code-bc94057f452f4806af70fd34540f72ad.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };

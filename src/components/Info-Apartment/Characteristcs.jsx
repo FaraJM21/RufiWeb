@@ -48,7 +48,7 @@ const Characteristcs = (props) => {
     },
   ];
   return (
-    <div className="charasteristics"  style={{display: props.infoNum === 2 ? 'flex' : 'none'}}>
+    <div className="charasteristics" style={{display: props.infoNum === 2 ? 'flex' : 'none'}}>
       <div className="table-box">
         {BoxArray.map((item, index) =>{
           return (
