@@ -6,15 +6,12 @@ import { Dropdown, Select } from "antd";
 const Search = () => {
   // for manual dropdown
   const [dropdown, setDropdown] = useState(false);
-
   //for select
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
-
   //for mobile search - filter
   const [mobileDropdown, setMobileDropdown] = useState(false);
-
   return (
     <section className="search">
       {/* desktop version */}
@@ -221,5 +218,4 @@ const Search = () => {
     </section>
   );
 };
-
 export default Search;
