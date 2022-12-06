@@ -8,7 +8,6 @@ const HouseCard = () => {
   return (
     <section className="houseCard">
       <div className="wrapper">
-        {/*  */}
         <div className="images">
           <HouseCardCarousel />
           <div className="small-images">
