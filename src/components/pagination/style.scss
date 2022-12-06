@@ -23,11 +23,10 @@
 
   .ant-pagination {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 !important;
     padding: 0 !important;
-    max-width: 426px;
+    max-width: 436px;
     width: 100%;
     height: 46px !important;
   }
@@ -46,7 +45,7 @@
     }
     @media (max-width: 600px) {
       height: 40px !important;
-      max-width: 43px !important;
+      width: 40px !important;
     }
   }
   .ant-pagination .ant-pagination-item-active {
@@ -56,11 +55,12 @@
     margin: 0 !important;
     padding: 0 !important;
     border-radius: 4px;
-    transform: translateY(8px);
+    transform: translate(-3px, 8px);
+
     @media (max-width: 600px) {
       height: 40px !important;
-      max-width: 43px !important;
-      transform: translateY(4px);
+      width: 40px !important;
+      transform: translate(-5px, 5px);
     }
   }
   .ant-pagination .ant-pagination-item-active a {
@@ -79,7 +79,7 @@
     }
     @media (max-width: 600px) {
       height: 40px !important;
-      max-width: 42px !important;
+      width: 40px !important;
     }
   }
 

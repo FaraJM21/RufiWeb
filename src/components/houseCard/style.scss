@@ -5,7 +5,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding-bottom: 30px;
     margin-bottom: 30px;
-
     //media started
     @media (max-width: 1000px) {
       display: flex;
@@ -37,6 +36,7 @@
           max-width: 457px;
         }
         .icons {
+          margin-left: 10px;
           .icon {
             background: #d9d9d9;
           }
@@ -84,13 +84,23 @@
     }
 
     @media (max-width: 610px) {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+
+      .images {
+        width: 100%;
+      }
+      .icons {
+        margin-left: 10px;
+      }
       .content {
         .text {
           font-weight: 400;
           font-size: 12px;
           line-height: 150.9%;
           margin-bottom: 70px;
-          max-width: 457px;
+          max-width: 557px;
         }
       }
       .images {
@@ -100,14 +110,13 @@
       }
       .price {
         width: 100%;
-        max-width: 457px;
+        max-width: 557px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        top: 460px;
+        top: 420px;
         padding: 0 10px;
-
       }
     }
 
@@ -118,8 +127,10 @@
           font-size: 12px;
           line-height: 150.9%;
           margin-bottom: 70px;
-          max-width: 457px;
         }
+      }
+      .icons {
+        margin-left: 10px;
       }
       .images {
         .small-images {
@@ -128,18 +139,27 @@
       }
       .price {
         width: 100%;
-        max-width: 457px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        top: 320px;
+        top: 73%;
         padding: 0 10px;
-
       }
     }
     @media (max-width: 450px) {
       .content {
+        .icons {
+          gap: 5px;
+          .icon {
+            width: 40px;
+            height: 40px;
+          }
+          .phone {
+            max-width: 170px;
+            width: 100%;
+          }
+        }
         .text {
           font-weight: 400;
           font-size: 12px;
@@ -160,7 +180,7 @@
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        top: 340px;
+        top: 75%;
         padding: 0 10px;
       }
     }
@@ -168,6 +188,24 @@
 
     .images {
       display: flex;
+    }
+    .big-image {
+      width: 100%;
+      width: 321px;
+      @media (max-width: 610px) {
+        width: 100%;
+        max-width: 1000px;
+        height: 256px;
+        padding: 10px 10px 0 10px;
+      }
+      @media (max-width: 410px) {
+        height: 216px;
+        padding: 10px 10px 0 10px;
+      }
+      @media (max-width: 376px) {
+        padding: 10px 10px 0 10px;
+        height: 176px;
+      }
     }
     .small-images {
       display: flex;
@@ -188,13 +226,13 @@
   }
 
   .content {
-    margin-left: 10px;
     display: block;
     .title {
       font-weight: 600;
       font-size: 24px;
       line-height: 29px;
       margin-bottom: 22px;
+      margin-left: 10px;
     }
     .description {
       margin-bottom: 21px;
@@ -203,6 +241,7 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 24px;
+      margin-left: 10px;
     }
     .text {
       max-width: 600px;
@@ -210,6 +249,39 @@
       font-size: 16px;
       line-height: 150.9%;
       margin-bottom: 21px;
+      margin-left: 10px;
+    }
+    .divider {
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      display: none;
+      position: absolute;
+      @media (max-width: 610px) {
+        display: block;
+        position: absolute;
+        top: 410px;
+      }
+      @media (max-width: 410px) {
+        display: block;
+        position: absolute;
+        top: 370px;
+      }
+      @media (max-width: 410px) {
+        display: block;
+        position: absolute;
+        top: 385px;
+      }
+      @media (max-width: 378px) {
+        display: block;
+        position: absolute;
+        top: 345px;
+      }
+      @media (max-width: 375px) {
+        display: block;
+        position: absolute;
+        top: 355px;
+      }
     }
     .icons {
       display: flex;
