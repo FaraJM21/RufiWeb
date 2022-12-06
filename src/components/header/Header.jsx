@@ -59,10 +59,6 @@ function Header() {
           </div>
 
           <div className="header-right">
-            {/* <div className="announcement">
-              
-            </div> */}
-
             <button className="announcement">
               <img src={plus} alt="404" />
               <p>Разместить обьявление</p>
@@ -78,7 +74,7 @@ function Header() {
               <img src={logo} alt="404" />
               <div className="hamburger">
                 {/**/}
-                <Drawers/>
+                <Drawers />
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ footer {
   justify-content: flex-start;
 }
 
-ul {
+.footer-ul {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,10 @@ ul {
     line-height: 24px;
     text-align: center;
     cursor: pointer;
+    @media (max-width: 450px) {
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
   }
 }
 
@@ -42,10 +46,9 @@ ul {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width:630px) {
+  @media (max-width: 630px) {
     display: none;
   }
- 
 
   .logo {
     height: 100%;
@@ -101,22 +104,14 @@ ul {
   justify-content: center;
   gap: 20px;
 
-  @media (max-width:630px) {
-    display: flex ;
+  @media (max-width: 630px) {
+    display: flex;
   }
 
   .logo {
     text-align: center;
   }
 
-  ul{
-    li{
-      @media (max-width:450px) {
-        font-size: 0.9rem;
-        line-height: 20px;
-      }
-    }
-  }
   
 }
 
