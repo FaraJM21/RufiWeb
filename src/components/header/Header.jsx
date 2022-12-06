@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Divide as Hamburger } from "hamburger-react";
 import "./header.scss";
 import { BsHeart } from "react-icons/bs";
 import Selects from "../select/Select";
 import logo from "../../assets/img/userprofile.svg";
 import plus from "../../assets/img/plus.svg";
 import { Link } from "react-router-dom";
+import Drawers from "../Drawer/Drawers";
 function Header() {
   const [shadow, setShadow] = useState("");
   const [top, setTop] = useState();
-  const [isOpen, setOpen] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
   let prevScrollpos = window.pageYOffset;
 
   const controlNavbar = () => {
@@ -76,11 +76,9 @@ function Header() {
               </span>
               <img src={plus} alt="404" id="plus" />
               <img src={logo} alt="404" />
-              <div
-                className="hamburger"
-                style={{ background: isOpen ? "#8E8E8E" : "" }}
-              >
-                <Hamburger toggled={isOpen} toggle={setOpen} />
+              <div className="hamburger">
+                {/**/}
+                <Drawers/>
               </div>
             </div>
           </div>

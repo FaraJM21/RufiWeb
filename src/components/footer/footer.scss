@@ -1,39 +1,51 @@
 footer {
   width: 100%;
-  display: flex;  
+  display: flex;
   align-items: flex-start;
   background: #d9d9d999;
-  margin-top: 50px;
+  margin-top: 90px;
   padding-bottom: 60px;
 }
 
-.footer,
-.lists {
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+
+  .top {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.lists,
+.first-body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 50vh;
 
-  ul {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    .top {
-      font-weight: 500;
-      font-size: 1rem;
-      line-height: 24px;
-    }
-
-    li {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 0.8rem;
-      line-height: 24px;
-      cursor: pointer;
-    }
+  @media (max-width:630px) {
+    display: none;
   }
+ 
 
   .logo {
     height: 100%;
@@ -42,9 +54,6 @@ footer {
     align-items: flex-start;
   }
 }
-
-
-
 
 .lists {
   width: 90%;
@@ -67,6 +76,14 @@ footer {
     border-radius: 4px;
     cursor: pointer;
 
+    @media (max-width: 550px) {
+      width: 12rem;
+    }
+
+    @media (max-width: 330px) {
+      width: 10rem;
+    }
+
     p {
       font-style: normal;
       font-weight: 400;
@@ -74,4 +91,51 @@ footer {
       line-height: 17px;
     }
   }
+}
+
+.second-body {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width:630px) {
+    display: flex ;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  ul{
+    li{
+      @media (max-width:450px) {
+        font-size: 0.9rem;
+        line-height: 20px;
+      }
+    }
+  }
+  
+}
+
+.list-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.second-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
