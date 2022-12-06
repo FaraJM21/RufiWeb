@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Drawer } from "antd";
 import { Divide as Hamburger } from "hamburger-react";
 import "./drawer.scss";
@@ -11,6 +11,19 @@ const Drawers = () => {
   const [two, setTwo] = useState(false);
   const [third, setThird] = useState(false);
   const [fourth, setFourth] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    if (width > 736) {
+      setOpen(false);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
 
   const handleClick = (text) => {
     if (text === "first") {
