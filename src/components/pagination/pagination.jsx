@@ -3,12 +3,12 @@ import { Pagination as PaginationAnt } from "antd";
 import "./style.scss";
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [currentData, setCurrentData] = useState();
+  // const [currentData, setCurrentData] = useState();
 
-  const totalData = null;
+  // const totalData = null;
   const itemsPerPage = 3;
-  const lastItem = currentPage * itemsPerPage;
-  const firstItem = lastItem - itemsPerPage;
+  // const lastItem = currentPage * itemsPerPage;
+  // const firstItem = lastItem - itemsPerPage;
 
   return (
     <section className="pagination-ant">

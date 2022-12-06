@@ -29,7 +29,7 @@
   border-radius: 5px;
   margin-top: 2%;
   text-align: start;
-  justify-content: start;
+  justify-content: flex-start;
   display: flex;
   align-items: center;
   transition: 0.2s;
@@ -175,10 +175,10 @@
   align-items: flex-start;
   gap: 15px;
 
-  img{
+  img {
     transition: 0.2s;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
   }
@@ -194,7 +194,7 @@
     height: 52px;
     display: flex;
     gap: 20px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     img {
       width: 20px;
@@ -242,6 +242,7 @@
     center;
   background-size: cover;
   background-attachment: scroll;
+  filter: drop-shadow(5px 5px 4px #60fffc);
 }
 
 .one {
@@ -249,6 +250,27 @@
   height: 246px;
   top: 2%;
   left: 0;
+  animation: first 1s linear infinite alternate-reverse;
+}
+
+@keyframes first {
+  from {
+    top: 2%;
+  }
+
+  to {
+    top: 5%;
+  }
+}
+
+@keyframes second {
+  from {
+    top: 5%;
+  }
+
+  to {
+    top: 10%;
+  }
 }
 
 .two {
@@ -256,6 +278,7 @@
   height: 161px;
   top: 5%;
   right: 0%;
+  animation: second 1.5s ease-in-out infinite alternate-reverse;
 }
 
 .three {
@@ -263,6 +286,17 @@
   height: 246px;
   bottom: 0%;
   left: 0%;
+  animation: third 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes third {
+  from {
+    left: 5%;
+  }
+
+  to {
+    left: -10%;
+  }
 }
 
 .four {
@@ -270,6 +304,35 @@
   height: 300px;
   right: 0%;
   top: 66%;
+  animation: four 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes four {
+  0% {
+    background: url(https://wallpaperaccess.com/full/1700222.jpg) no-repeat
+      center center;
+    background-size: cover;
+  }
+  25% {
+    background: url(https://wallpaperaccess.com/full/5089971.jpg) no-repeat
+      center center;
+    background-size: cover;
+  }
+  50% {
+    background: url(https://wallpaperaccess.com/full/2195996.jpg) no-repeat
+      center center;
+    background-size: cover;
+  }
+  75% {
+    background: url(https://media.bizj.us/view/img/12266938/photoonline001*1200xx2048-1152-0-107.jpg)
+      no-repeat center center;
+    background-size: cover;
+  }
+  100% {
+    background: url(https://images7.alphacoders.com/341/341714.jpg) no-repeat
+      center center;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 840px) {
@@ -299,8 +362,6 @@
   .three {
     left: -10%;
   }
-
-  
 
   .inner {
     h2 {
@@ -348,15 +409,15 @@
   }
 }
 
-
-@media (max-width:400px){
-  .inner{
+@media (max-width: 400px) {
+  .inner {
     height: 700px;
   }
-  .one, .three,.four,.two{
+  .one,
+  .three,
+  .four,
+  .two {
     width: 100px;
     height: 120px;
   }
-
-  
 }

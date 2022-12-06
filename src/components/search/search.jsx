@@ -25,7 +25,7 @@ const Search = () => {
         <Select
           defaultValue="buy"
           dropdownStyle={{ backgroundColor: "white" }}
-          onChange={() => {}}
+          onChange={(e)=> handleChange(e.target.value)}
           options={[
             {
               value: "buy",
@@ -214,6 +214,9 @@ const Search = () => {
             <p>Искать</p>
           </div>
         </div>
+        <Dropdown menu={{ items }} trigger="click">
+          <p>Фильтры</p>
+        </Dropdown>
       </div>
     </section>
   );
