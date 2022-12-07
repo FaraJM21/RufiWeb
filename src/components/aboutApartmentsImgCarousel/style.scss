@@ -1,15 +1,11 @@
 .ImgSwiper {
-
     width: 100%;
     height: 100%;
-
     border-radius: 4px;
+
     @media (max-width: 1000px) {
     }
-    @media (max-width: 500px) {
-      max-width: 313px;
-      height: 166px;
-    }
+    
     .slide {
       background-position: center;
       background-repeat: no-repeat;

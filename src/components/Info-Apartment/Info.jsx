@@ -19,9 +19,8 @@ const Info = (props) => {
           Рассмотрим ипотеку. Показы оперативно.
         </p>
       </div>
-      <div className="arrow-line"></div>
       <Checkboxes />
-      <div className="arrow-line" ></div>
+      <div className="arrow-line"></div>
       <LocationCheckboxes />
     </div>
   );

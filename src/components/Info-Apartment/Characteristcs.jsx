@@ -48,12 +48,15 @@ const Characteristcs = (props) => {
     },
   ];
   return (
-    <div className="charasteristics" style={{display: props.infoNum === 2 ? 'flex' : 'none'}}>
+    <div
+      className="charasteristics"
+      style={{ display: props.infoNum === 2 ? "flex" : "none" }}
+    >
       <div className="table-box">
-        {BoxArray.map((item, index) =>{
+        {BoxArray.map((item, index) => {
           return (
             <div key={index}>
-              <div className="line" >
+              <div className="line">
                 <div className="title">
                   <p>{item.title}</p>
                 </div>
