@@ -9,7 +9,9 @@ const HouseCard = () => {
     <section className="houseCard">
       <div className="wrapper">
         <div className="images">
-          <HouseCardCarousel />
+          <div className="big-image">
+            <HouseCardCarousel />
+          </div>
           <div className="small-images">
             <div
               style={{ backgroundImage: `url(${house})` }}
@@ -45,6 +47,7 @@ const HouseCard = () => {
               <img src={like} alt="" />
             </div>
           </div>
+          <div className="divider"></div>
         </div>
 
         <div className="price">

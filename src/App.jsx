@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {   AboutApartment, Apartments, Home, Layout, Profile } from "./pages";
-import './assets/App.scss'
+import { AboutApartment, Apartments, Home, Layout, Profile } from "./pages";
+import "./assets/App.scss";
 import "swiper/css";
 
 function App() {

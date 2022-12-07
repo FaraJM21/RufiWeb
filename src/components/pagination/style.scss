@@ -1,10 +1,11 @@
 .pagination-ant {
-  width: 100%;
   //medisa started
   @media (max-width: 600px) {
-    max-width: 300px;
+    width: 100%;
     .ant-pagination {
       height: 42px !important;
+      width: 100% !important;
+      max-width: 310px !important;
     }
     .ant-pagination .ant-pagination-item a {
       width: 35px !important;
@@ -13,12 +14,21 @@
     .ant-pagination .ant-pagination-item-active {
       width: 35px !important;
       height: 42px !important;
+      transform: translate(0, -2px !important);
+    }
+    .ant-pagination .ant-pagination-item-active a {
+      width: 35px !important;
+      height: 42px !important;
+      transform: translate(0, -2px !important);
+
     }
     button {
-      width: 30px !important;
-      height: 42px !important;
+      width: 35px !important;
+      height: 35px !important;
+      background-color: red !important;
     }
   }
+
   .ant-pagination {
     display: flex;
     justify-content: center;
@@ -63,7 +73,7 @@
   }
   
   button {
-    width: 52px !important;
+    width: 42px !important;
     height: 46px !important;
     display: flex;
     margin: 0 !important;
@@ -72,12 +82,56 @@
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.5) !important;
     border-radius: 4px !important;
-    transform: translateY(-7px);
+    transform: translateY(-8px);
+  }
+  .ant-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 436px;
+    width: 100%;
+    height: 46px !important;
+  }
+  .ant-pagination .ant-pagination-item a {
+    border: none !important;
+    width: 49px !important;
+    height: 46px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transform: translate(0, -8px);
+  }
+  .ant-pagination .ant-pagination-item-active {
+    border: none !important;
+    width: 42px !important;
+    height: 46px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 4px;
+    transform: translate(-5px, 8px) !important;
+  }
+  .ant-pagination .ant-pagination-item-active a {
+    color: white !important;
+    width: 49px !important;
+    height: 46px;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 4px;
+    transform: translate(-2px, -8px);
     &:hover {
-      background-color: #f0f0f0;
-    }
-    &:hover {
-      background-color: red;
+      background: #000000;
     }
   }
 }
