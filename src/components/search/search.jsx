@@ -115,7 +115,7 @@ const Search = () => {
 
       {/* mobile version */}
       <div className="mobile">
-        <input type="text" placeholder="Адресс, метро, район " />
+        <input type="text" placeholder="Адресс, метро, район " className="search-input"/>
         <p onClick={() => setMobileDropdown(!mobileDropdown)}>Фильтры</p>
 
         <div className={mobileDropdown ? "submenu active" : "submenu"}>
