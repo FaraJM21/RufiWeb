@@ -41,6 +41,24 @@
     //media ended
 
     .left {
+      .ant-select-selector {
+        border: 1px solid rgba(0, 0, 0, 0.5) !important;
+        border-radius: 8px !important;
+        height: 50px !important;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: black;
+        display: flex;
+        align-items: center;
+      }
+      .ant-select-single .ant-select-selector .ant-select-selection-search {
+        border-radius: 8px;
+        width: 100%;
+        max-width: 330px;
+        position: absolute;
+        left: 0;
+      }
       .count {
         font-weight: 600;
         font-size: 24px;

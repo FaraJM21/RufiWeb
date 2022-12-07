@@ -1,10 +1,11 @@
 import React from "react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./style.scss";
 import "swiper/css";
+import "./style.scss";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import house from "../../assets/img/house.jpg";
 const HouseCardCarousel = () => {
   return (
