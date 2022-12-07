@@ -195,6 +195,11 @@
     @media (max-width: 1120px) {
       display: flex;
     }
+    @media (max-width: 1120px) {
+      .search-input {
+        font-size: 12px;
+      }
+    }
     margin: 15px auto;
     width: 100%;
     max-width: 1000px;
@@ -230,7 +235,7 @@
       padding: 10px;
       cursor: pointer;
     }
-    .submenu{
+    .submenu {
       display: none;
     }
     .submenu.active {
