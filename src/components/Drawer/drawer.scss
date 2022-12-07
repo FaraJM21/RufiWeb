@@ -72,10 +72,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      h3,
-      #arrows {
-        cursor: pointer;
-      }
+      cursor: pointer;
 
       #arrows {
         font-size: 16px;
@@ -98,15 +95,19 @@
     flex-direction: column;
     align-items: flex-start;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 10px;
+    
 
     p {
-      width: 100%;
       height: 30px;
-      padding: 30px 30px;
+      padding: 10px 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #d9d9d9;
+      text-align: start;
+
       &:hover {
-        background-color: #f3f3f3;
-        cursor: pointer;
+        border-color: black;
       }
     }
   }

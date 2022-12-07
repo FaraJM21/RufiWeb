@@ -7,6 +7,7 @@ import searchlogo from "../../assets/img/search.svg";
 import settings from "../../assets/img/setting.svg";
 function SearchBox() {
   const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div className="inner">
       <p>Более 5900 объявлений с продажей/ арендой домов, квартир</p>

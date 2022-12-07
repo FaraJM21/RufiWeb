@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Drawer } from "antd";
 import { Divide as Hamburger } from "hamburger-react";
 import "./drawer.scss";
@@ -6,13 +6,35 @@ import { DownOutlined } from "@ant-design/icons";
 const Drawers = () => {
   const [open, setOpen] = useState(false);
   const placement = "top";
-  const [num, setNum] = useState(0);
-  const [reset, setReset] = useState(false);
   const [lang, setLang] = useState(false);
+  const [first, setFirst] = useState(false);
+  const [two, setTwo] = useState(false);
+  const [third, setThird] = useState(false);
+  const [fourth, setFourth] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
 
-  const handleClick = (num) => {
-    setReset(!reset);
-    reset ? setNum(num) : setNum(0);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    if (width > 736) {
+      setOpen(false);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
+
+  const handleClick = (text) => {
+    if (text === "first") {
+      setFirst(!first);
+    } else if (text === "two") {
+      setTwo(!two);
+    } else if (text === "third") {
+      setThird(!third);
+    } else {
+      setFourth(!fourth);
+    }
   };
 
   const onClose = () => {
@@ -50,19 +72,19 @@ const Drawers = () => {
 
         <div className="drawer-select">
           <div className="menu-dropdown">
-            <div className="default" onClick={() => handleClick(1)}>
+            <div className="default" onClick={() => handleClick("first")}>
               {" "}
               <h3>Купить недвижимость</h3>{" "}
               <DownOutlined
                 style={{
-                  transform: num === 1 ? "rotate(180deg)" : "rotate(0deg)",
+                  transform: first ? "rotate(180deg)" : "rotate(0deg)",
                 }}
                 id="arrows"
               />
             </div>
             <div
               className="menu-list"
-              style={{ display: num === 1 ? "flex" : "none" }}
+              style={{ display: first ? "flex" : "none" }}
             >
               <p>Квартира</p>
               <p>Дом</p>
@@ -71,19 +93,40 @@ const Drawers = () => {
           </div>
 
           <div className="menu-dropdown">
-            <div className="default" onClick={() => handleClick(2)}>
+            <div className="default" onClick={() => handleClick("two")}>
               {" "}
-              <h3>Купить недвижимость</h3>{" "}
+              <h3>Снять недвижимость</h3>{" "}
               <DownOutlined
                 style={{
-                  transform: num === 2 ? "rotate(180deg)" : "rotate(0deg)",
+                  transform: two ? "rotate(180deg)" : "rotate(0deg)",
                 }}
                 id="arrows"
               />
             </div>
             <div
               className="menu-list"
-              style={{ display: num === 2 ? "flex" : "none" }}
+              style={{ display: two ? "flex" : "none" }}
+            >
+              <p>Квартира</p>
+              <p>Посуточно</p>
+              <p>Комната</p>
+            </div>
+          </div>
+
+          <div className="menu-dropdown">
+            <div className="default" onClick={() => handleClick("third")}>
+              {" "}
+              <h3>Новостройки</h3>{" "}
+              <DownOutlined
+                style={{
+                  transform: third ? "rotate(180deg)" : "rotate(0deg)",
+                }}
+                id="arrows"
+              />
+            </div>
+            <div
+              className="menu-list"
+              style={{ display: third ? "flex" : "none" }}
             >
               <p>Квартира</p>
               <p>Дом</p>
@@ -92,19 +135,19 @@ const Drawers = () => {
           </div>
 
           <div className="menu-dropdown">
-            <div className="default" onClick={() => handleClick(3)}>
+            <div className="default" onClick={() => handleClick("")}>
               {" "}
-              <h3>Купить недвижимость</h3>{" "}
+              <h3>Новостройки</h3>{" "}
               <DownOutlined
                 style={{
-                  transform: num === 3 ? "rotate(180deg)" : "rotate(0deg)",
+                  transform: fourth ? "rotate(180deg)" : "rotate(0deg)",
                 }}
                 id="arrows"
               />
             </div>
             <div
               className="menu-list"
-              style={{ display: num === 3 ? "flex" : "none" }}
+              style={{ display: fourth ? "flex" : "none" }}
             >
               <p>Квартира</p>
               <p>Дом</p>

@@ -13,7 +13,7 @@ function Footer() {
               <h3 className="logo">Logo</h3>
               <div className="lists">
                 <div className="list">
-                  <ul>
+                  <ul className="footer-ul">
                     <li className="top">В районе </li>
                     <li>Юнусабад</li>
                     <li>Мирабад</li>
@@ -24,7 +24,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="list">
-                  <ul>
+                  <ul className="footer-ul">
                     <li className="top">У метро</li>
                     <li>Юнусабад</li>
                     <li>Туркистон</li>
@@ -37,7 +37,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="list">
-                  <ul>
+                  <ul className="footer-ul">
                     <li className="top">Комнатность</li>
                     <li>Однокомнатные</li>
                     <li>Двухкомнатные</li>
@@ -66,7 +66,7 @@ function Footer() {
             </div>
 
             <div className="second-body">
-              <div className="stores" style={{flexDirection:'row'}}>
+              <div className="stores" style={{ flexDirection: "row" }}>
                 <div className="store">
                   <img src={appstore} alt="404" width={25} height={28} />
                   <p>
@@ -87,7 +87,7 @@ function Footer() {
                 <h3 className="logo">Logo</h3>
                 <div className="list-box">
                   <div className="list">
-                    <ul>
+                    <ul className="footer-ul">
                       <li className="top">У метро</li>
                       <li>Юнусабад</li>
                       <li>Туркистон</li>
@@ -99,7 +99,7 @@ function Footer() {
                       </li>
                     </ul>
 
-                    <ul>
+                    <ul className="footer-ul">
                       <li className="top">В районе </li>
                       <li>Юнусабад</li>
                       <li>Мирабад</li>
@@ -112,7 +112,7 @@ function Footer() {
                     </ul>
                   </div>
                   <div className="list">
-                    <ul>
+                    <ul className="footer-ul">
                       <li className="top">Комнатность</li>
                       <li>Однокомнатные</li>
                       <li>Двухкомнатные</li>
@@ -120,7 +120,7 @@ function Footer() {
                       <li>Многокомнатные</li>
                     </ul>
 
-                    <ul>
+                    <ul className="footer-ul">
                       <li className="top">Тип недвижимости</li>
                       <li>Квартира</li>
                       <li>Участок</li>
