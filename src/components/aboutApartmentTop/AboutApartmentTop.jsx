@@ -41,7 +41,7 @@ const AboutApartmentTop = () => {
           <div>
             <div className="circle"></div>
             <p>Сергей</p>
-            <img src={icon} alt="" />
+            <img src={icon} alt="" className="okIcon"/>
           </div>
           <div>
             <button className="show-btn">Показать телефон</button>

@@ -332,30 +332,35 @@
     width: 100%;
     margin-top: 30px;
     .bottom {
-      gap: 0;
-      width: 100%;
-    }
-    .apartment-size-text {
-
-      font-size: 15px;
-      line-height: 10px !important;
-    }
-    .location-text{
-      line-height: 7px !important;
-    }
-    .top,.center,.bottom {
-      margin-left: 0px;
-      
-    }
-    .bottom {
-      gap: 2px;
-      .sendIcon {
-        width: 35px;
-        height: 35px;
+      gap: 0px;
+      .okIcon {
+        width: 20px;
+        height: 20px;
+      }
+      .sendIcon,
+      .likeIcon {
+        width: 25px !important;
+        height: 25px !important;
+        img {
+          width: 12px !important;
+          height: 12px !important;
+        }
       }
       p {
         font-size: 16px;
       }
+    }
+    .apartment-size-text {
+      font-size: 15px;
+      line-height: 10px;
+    }
+    .location-text {
+      line-height: 7px;
+    }
+    .top,
+    .center,
+    .bottom {
+      margin-left: 0px;
     }
   }
 }
