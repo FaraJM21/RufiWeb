@@ -251,6 +251,8 @@
         .src-images {
           width: 33.3%;
           height: 100px;
+          background-position: center center;
+          background-size: cover;
         }
       }
     }
@@ -324,7 +326,7 @@
     }
     .bottom-images {
       .src-images {
-        height: 30px;
+        height: 65px !important;
       }
     }
   }
