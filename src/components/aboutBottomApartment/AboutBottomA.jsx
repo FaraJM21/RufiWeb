@@ -4,12 +4,9 @@ import "./AboutBottom.scss";
 const AboutBottomA = () => {
   return (
     <div className="apartments-bottom-cards">
-      {/* <div>
-        <HouseCard />
-      </div>
-      <div>
-        <HouseCard />
-      </div> */}
+      <HouseCard />
+
+      <HouseCard />
     </div>
   );
 };
