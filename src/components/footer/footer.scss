@@ -4,7 +4,7 @@ footer {
   align-items: flex-start;
   background: #d9d9d999;
   margin-top: 90px;
-  padding-bottom: 60px;
+  // padding-bottom: 20px;
 }
 
 .footer {
@@ -33,9 +33,9 @@ footer {
     line-height: 24px;
     text-align: center;
     cursor: pointer;
-    @media (max-width: 450px) {
+    @media (max-width: 560px) {
       font-size: 0.9rem;
-      line-height: 20px;
+      line-height: 15px;
     }
   }
 }
@@ -124,7 +124,7 @@ footer {
   .list {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
