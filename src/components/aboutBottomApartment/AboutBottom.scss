@@ -1,0 +1,12 @@
+.apartments-bottom-cards {
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .apartments-bottom-cards {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}

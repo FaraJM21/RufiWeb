@@ -1,0 +1,227 @@
+.info-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  width: 100%;
+  margin-top: 45px;
+  height: auto;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 172.9%;
+  }
+}
+
+.charasteristics {
+  width: 100%;
+  margin-top: 45px;
+  .table-box {
+    width: 100%;
+    height: 549px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .line {
+      position: relative;
+      left: 35px;
+      width: 90%;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        p {
+          color: rgba(0, 0, 0, 0.7);
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+      .info {
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+    .bottomline {
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .charasteristics {
+    .table-box {
+      height: 520px;
+
+      border-radius: 10px;
+
+      .line {
+        width: 90%;
+        height: 40px;
+        .title {
+          p {
+            font-size: 20px;
+            line-height: 21px;
+          }
+        }
+        .info {
+          span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+      .bottomline {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .charasteristics {
+    .table-box {
+      .line {
+        width: 90%;
+        height: 40px;
+        .title {
+          p {
+            font-size: 18px;
+            line-height: 19px;
+          }
+        }
+        .info {
+          span {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 625px) {
+  .charasteristics {
+    .table-box {
+      .line {
+        height: 40px;
+        .title {
+          width: 49%;
+          p {
+            font-size: 16px;
+            line-height: 17px;
+          }
+        }
+        .info {
+          width: 49%;
+
+          span {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 555px) {
+  .charasteristics {
+    .table-box {
+      margin-top: 2%;
+      height: 450px;
+      .line {
+        width: 97%;
+        height: 30px;
+        left: 5px;
+        .title {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          p {
+            font-size: 16px;
+            line-height: 0px;
+          }
+        }
+        .info {
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 50%;
+          span {
+            font-size: 14px;
+            line-height: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 481px) {
+  .charasteristics {
+    .table-box {
+      height: 400px;
+      .line {
+        height: 30px;
+        left: 5px;
+        .title {
+          width: auto;
+          p {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        .info {
+          width: auto;
+          span {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.apartment-location {
+  width: 100%;
+  margin-top: 50px;
+
+  .map {
+    width: 100%;
+    height: 507px;
+    background: #d9d9d9;
+
+    .mapouter {
+      position: relative;
+      text-align: right;
+      width: 100%;
+      height: 100%;
+    }
+    .gm-control-active {
+      background-color: red;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+      height: 100%;
+    }
+    .gmap_iframe {
+      height: 100% !important;
+    }
+  }
+}

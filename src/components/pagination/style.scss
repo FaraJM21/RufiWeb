@@ -28,7 +28,50 @@
       background-color: red !important;
     }
   }
-  //   //media ended
+
+  .ant-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 426px;
+    width: 100%;
+    height: 46px !important;
+  }
+  .ant-pagination .ant-pagination-item a {
+    width: 49px !important;
+    height: 46px;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px);
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  .ant-pagination .ant-pagination-item-active {
+    border: none !important;
+    width: 49px !important;
+    height: 46px;
+    border-radius: 4px;
+    transform: translateY(8px);
+  }
+  .ant-pagination .ant-pagination-item-active a {
+    color: white !important;
+    width: 49px !important;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 4px;
+    &:hover {
+      background: #000000;
+    }
+  }
+  
   button {
     width: 42px !important;
     height: 46px !important;
