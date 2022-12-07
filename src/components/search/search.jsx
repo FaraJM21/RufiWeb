@@ -214,9 +214,6 @@ const Search = () => {
             <p>Искать</p>
           </div>
         </div>
-        <Dropdown menu={{ items }} trigger="click">
-          <p>Фильтры</p>
-        </Dropdown>
       </div>
     </section>
   );
