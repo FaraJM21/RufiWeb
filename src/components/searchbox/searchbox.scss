@@ -250,35 +250,35 @@
   height: 246px;
   top: 2%;
   left: 0;
-  animation: first 1s linear infinite alternate-reverse;
+  // animation: first 1s linear infinite alternate-reverse;
 }
 
-@keyframes first {
-  from {
-    top: 2%;
-  }
+// @keyframes first {
+//   from {
+//     top: 2%;
+//   }
 
-  to {
-    top: 5%;
-  }
-}
+//   to {
+//     top: 5%;
+//   }
+// }
 
-@keyframes second {
-  from {
-    top: 5%;
-  }
+// @keyframes second {
+//   from {
+//     top: 5%;
+//   }
 
-  to {
-    top: 10%;
-  }
-}
+//   to {
+//     top: 10%;
+//   }
+// }
 
 .two {
   width: 171px;
   height: 161px;
   top: 5%;
   right: 0%;
-  animation: second 1.5s ease-in-out infinite alternate-reverse;
+  // animation: second 1.5s ease-in-out infinite alternate-reverse;
 }
 
 .three {
@@ -286,54 +286,54 @@
   height: 246px;
   bottom: 0%;
   left: 0%;
-  animation: third 2s ease-in-out infinite alternate-reverse;
+  // animation: third 2s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes third {
-  from {
-    left: 5%;
-  }
+// @keyframes third {
+//   from {
+//     left: 5%;
+//   }
 
-  to {
-    left: -10%;
-  }
-}
+//   to {
+//     left: -10%;
+//   }
+// }
 
 .four {
   width: 295px;
   height: 300px;
   right: 0%;
   top: 66%;
-  animation: four 20s ease-in-out infinite alternate-reverse;
+  // animation: four 20s ease-in-out infinite alternate-reverse;
 }
 
-@keyframes four {
-  0% {
-    background: url(https://wallpaperaccess.com/full/1700222.jpg) no-repeat
-      center center;
-    background-size: cover;
-  }
-  25% {
-    background: url(https://wallpaperaccess.com/full/5089971.jpg) no-repeat
-      center center;
-    background-size: cover;
-  }
-  50% {
-    background: url(https://wallpaperaccess.com/full/2195996.jpg) no-repeat
-      center center;
-    background-size: cover;
-  }
-  75% {
-    background: url(https://media.bizj.us/view/img/12266938/photoonline001*1200xx2048-1152-0-107.jpg)
-      no-repeat center center;
-    background-size: cover;
-  }
-  100% {
-    background: url(https://images7.alphacoders.com/341/341714.jpg) no-repeat
-      center center;
-    background-size: cover;
-  }
-}
+// @keyframes four {
+//   0% {
+//     background: url(https://wallpaperaccess.com/full/1700222.jpg) no-repeat
+//       center center;
+//     background-size: cover;
+//   }
+//   25% {
+//     background: url(https://wallpaperaccess.com/full/5089971.jpg) no-repeat
+//       center center;
+//     background-size: cover;
+//   }
+//   50% {
+//     background: url(https://wallpaperaccess.com/full/2195996.jpg) no-repeat
+//       center center;
+//     background-size: cover;
+//   }
+//   75% {
+//     background: url(https://media.bizj.us/view/img/12266938/photoonline001*1200xx2048-1152-0-107.jpg)
+//       no-repeat center center;
+//     background-size: cover;
+//   }
+//   100% {
+//     background: url(https://images7.alphacoders.com/341/341714.jpg) no-repeat
+//       center center;
+//     background-size: cover;
+//   }
+// }
 
 @media (max-width: 840px) {
   .one {
