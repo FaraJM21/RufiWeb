@@ -4,6 +4,7 @@ import telegram from "../../assets/img/telegram.svg";
 import like from "../../assets/img/like.svg";
 import HouseCardCarousel from "../houseCardCarousel/houseCardCarousel";
 import house from "../../assets/img/house.jpg";
+import { useNavigate } from "react-router-dom";
 const HouseCard = () => {
   return (
     <section className="houseCard">

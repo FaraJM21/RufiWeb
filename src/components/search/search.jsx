@@ -121,7 +121,7 @@ const Search = () => {
         <div className={mobileDropdown ? "submenu active" : "submenu"}>
           <input
             type="text"
-            placeholder="Введите город, адресс, район "
+            placeholder="Введите город, адресс, район"
             className="region-input"
           />
           <Select
