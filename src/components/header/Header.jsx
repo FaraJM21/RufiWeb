@@ -27,11 +27,12 @@ function Header() {
   };
 
   useEffect(() => {
+
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  });
+  },);
 
   return (
     <header
@@ -54,8 +55,14 @@ function Header() {
             <Link className="links" to={"/apartments"}>
               Квартиры
             </Link>
-            <p className="links">Участки</p>
-            <p className="links">Новостройки</p>
+            <Link className="links" to={"/apartments"}>
+              {" "}
+              <p className="links">Участки</p>
+            </Link>
+            <Link className="links" to={"/apartments"}>
+              {" "}
+              <p className="links">Новостройки</p>
+            </Link>
           </div>
 
           <div className="header-right">

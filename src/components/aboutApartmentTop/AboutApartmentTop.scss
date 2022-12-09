@@ -35,6 +35,7 @@
 
     .top {
       height: 110px;
+      gap: 5px;
       .price-text {
         font-weight: 600;
         font-size: 28px;
@@ -50,6 +51,7 @@
       flex-direction: column;
       justify-content: center;
       height: 150px;
+      gap: 5px;
       .apartment-size-text {
         font-weight: 500;
         font-size: 20px;
@@ -251,6 +253,8 @@
         .src-images {
           width: 33.3%;
           height: 100px;
+          background-position: center center;
+          background-size: cover;
         }
       }
     }
@@ -324,7 +328,7 @@
     }
     .bottom-images {
       .src-images {
-        height: 30px;
+        height: 65px !important;
       }
     }
   }
@@ -339,11 +343,11 @@
       }
       .sendIcon,
       .likeIcon {
-        width: 25px !important;
-        height: 25px !important;
+        width: 30px !important;
+        height: 30px !important;
         img {
-          width: 12px !important;
-          height: 12px !important;
+          width: 14px !important;
+          height: 14px !important;
         }
       }
       p {
@@ -361,6 +365,10 @@
     .center,
     .bottom {
       margin-left: 0px;
+      gap: 2px !important;
+    }
+    .center{
+      margin: 0;
     }
   }
 }

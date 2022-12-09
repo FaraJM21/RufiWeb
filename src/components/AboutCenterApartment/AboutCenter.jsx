@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./AboutCenter.scss";
 import "../Info-Apartment/Info.scss";
 import Location from "../Info-Apartment/Location";
@@ -24,14 +24,29 @@ const AboutCenter = () => {
       <div className="left-info">
         <div className="Info-categories">
           <div className="categories">
-            <p onClick={() => handleChange(1)}>Описание</p>
-            <p onClick={() => handleChange(2)}>Характеристика</p>
-            <p onClick={() => handleChange(3)}>Расположение</p>
+            <p
+              onClick={() => handleChange(1)}
+              className={`${infoNum === 1 ? "active" : ""}`}
+            >
+              Описание
+            </p>
+            <p
+              onClick={() => handleChange(2)}
+              className={`${infoNum === 2 ? "active" : ""}`}
+            >
+              Характеристика
+            </p>
+            <p
+              onClick={() => handleChange(3)}
+              className={`${infoNum === 3 ? "active" : ""}`}
+            >
+              Расположение
+            </p>
           </div>
           <div className="bottom-line"></div>
           <Info infoNum={infoNum} />
           <Characteristcs infoNum={infoNum} />
-          {/* <Location infoNum={infoNum} /> */}
+          <Location infoNum={infoNum} />
         </div>
       </div>
       <div className="right-QrCode">
