@@ -10,6 +10,7 @@ import location from "../../assets/img/location.svg";
 import { flat } from "../../data/data";
 import { HeartOutlined } from "@ant-design/icons";
 import MainSwiper from "../mainswiper/MainSwiper";
+import { Link } from "react-router-dom";
 function GetApartment() {
   return (
     <div className="apartment" style={{marginTop:'10%'}}>
@@ -68,7 +69,7 @@ function GetApartment() {
                 </div>
 
                 <div className="enroll">
-                  <button>Смотреть</button>
+                <Link to={'/aboutapartment/1'}> <button>Смотреть</button></Link>
                   <p className="price">{item.price}</p>
                 </div>
               </div>
