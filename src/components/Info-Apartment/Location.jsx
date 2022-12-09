@@ -7,15 +7,16 @@ const Location = (props) => {
       style={{ display: props.infoNum === 3 ? "flex" : "none" }}
     >
       <div className="map">
-        <div class="mapouter">
-          <div class="gmap_canvas">
+        <div className="mapouter">
+          <div className="gmap_canvas">
             <iframe
+              title="myframe"
               className="gmap_iframe"
               width="100%"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              marginHeight="0"
+              marginWidth="0"
               src="https://maps.google.com/maps?width=786&amp;height=512&amp;hl=en&amp;q=tashkent&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
             <a href="https://piratebay-proxys.com/">Piratebay</a>

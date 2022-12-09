@@ -3,6 +3,7 @@ import { Drawer } from "antd";
 import { Divide as Hamburger } from "hamburger-react";
 import "./drawer.scss";
 import { DownOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 const Drawers = () => {
   //hello
   const [open, setOpen] = useState(false);
@@ -87,9 +88,18 @@ const Drawers = () => {
               className="menu-list"
               style={{ display: first ? "flex" : "none" }}
             >
-              <p>Квартира</p>
-              <p>Дом</p>
-              <p>Участок</p>
+              <Link to={"/apartments"} onClick = {()=> setOpen(false)}>
+                {" "}
+                <p>Квартира</p>
+              </Link>
+              <Link to={"/apartments"} onClick = {()=> setOpen(false)}>
+                {" "}
+                <p>Дом</p>
+              </Link>
+              <Link to={"/apartments"} onClick = {()=> setOpen(false)}>
+                {" "}
+                <p>Участок</p>
+              </Link>
             </div>
           </div>
 
