@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutApartmentTop from "../../components/aboutApartmentTop/AboutApartmentTop";
 import AboutBottomA from "../../components/aboutBottomApartment/AboutBottomA";
 import AboutCenter from "../../components/AboutCenterApartment/AboutCenter";
 import "./AboutApartments.scss";
 
 function AboutApartment() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main">
       <div className="container">
@@ -12,7 +15,7 @@ function AboutApartment() {
           <AboutApartmentTop />
           <AboutCenter />
           <div className="arrow-line"></div>
-          <AboutBottomA/>
+          <AboutBottomA />
         </div>
       </div>
     </div>
