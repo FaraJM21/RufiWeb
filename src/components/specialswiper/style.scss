@@ -108,7 +108,7 @@
       height: 50%;
       align-items: center;
       justify-content: flex-start;
-      gap: 50px;
+      gap: 20px;
 
       button {
         height: 40px;
@@ -185,8 +185,7 @@
     padding: 10px 0;
 
     .bottom{
-      gap:0;
-      justify-content: space-between;
+     gap: 10px;
 
       .icons{
         width: 30px;

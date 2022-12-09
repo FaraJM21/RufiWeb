@@ -4,7 +4,8 @@ import SelectGroups from "../selectgroups/SelectGroups";
 import search from "../../assets/img/searchwhite.svg";
 import "./searchbox.scss";
 import searchlogo from "../../assets/img/search.svg";
-import settings from "../../assets/img/setting.svg";
+import ModalSettings from "../modalsettings/ModalSettings";
+
 function SearchBox() {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -60,7 +61,7 @@ function SearchBox() {
           </div>
 
           <div className="settings">
-            <img src={settings} alt="404" />
+            <ModalSettings />
           </div>
         </div>
       </div>
