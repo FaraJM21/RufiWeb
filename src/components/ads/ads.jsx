@@ -1,8 +1,14 @@
 import { Select } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import map from "../../assets/img/map.svg";
 import "./style.scss";
-const Ads = () => {
+const Ads = (props) => {
+const [toggle,setToggle] = useState(false)
+
+  const myFunc = () =>{
+    setToggle(!toggle)
+    props.changeFunc(toggle)
+  }
   return (
     <section className="ads">
       <div className="wrapper">
@@ -33,10 +39,15 @@ const Ads = () => {
             ]}
           />
         </div>
+        {!toggle ?
         <div className="right">
           <img src={map} alt="" />
-          <p>На карте</p>
+          <p onClick={myFunc}>На карте</p>
         </div>
+        :
+        <div className="right">
+          <p onClick={myFunc}>Вернуть</p>
+        </div>}
       </div>
     </section>
   );

@@ -4,10 +4,18 @@ import telegram from "../../assets/img/telegram.svg";
 import like from "../../assets/img/like.svg";
 import HouseCardCarousel from "../houseCardCarousel/houseCardCarousel";
 import house from "../../assets/img/house.jpg";
+import { useNavigate } from "react-router-dom";
 const HouseCard = () => {
+  const navigate = useNavigate();
   return (
     <section className="houseCard">
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        onClick={() => {
+          navigate("/aboutApartment/id");
+          window.scrollTo(0, 0);
+        }}
+      >
         <div className="images">
           <div className="big-image">
             <HouseCardCarousel />
