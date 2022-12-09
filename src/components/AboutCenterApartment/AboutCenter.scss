@@ -19,15 +19,20 @@
           font-weight: 500;
           font-size: 24px;
           height: 60px;
-          
         }
-        :nth-child(1){
-          border-bottom: 2px solid  rgba(12, 5, 5, 0.761) ;
+        // .categories-text{
+        //   font-weight: 500;
+        //   border-bottom: none;
+        // }
+        .active{
+          font-weight: 600;
+          border-bottom: 2px solid rgba(12, 5, 5, 0.761);
         }
+        // :nth-child(1) {
+        //   border-bottom: 2px solid rgba(12, 5, 5, 0.761);
+        // }
       }
-      
     }
-
     .bottom-line {
       width: 100%;
       margin-top: -2px;
@@ -93,7 +98,6 @@
     }
   }
 }
-
 @media (max-width: 1030px) {
   .A-centerInfo {
     .left-info {
@@ -124,6 +128,7 @@
       .Info-categories {
         .categories {
           p {
+           
             font-size: 16px;
             height: 25px;
           }
@@ -146,6 +151,7 @@
         .categories {
           p {
             font-size: 12px;
+            height: 20px !important;
           }
         }
       }

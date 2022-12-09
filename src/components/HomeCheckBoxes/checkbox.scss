@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .check-box {
     .checkbox-title {
       font-size: 16px;
@@ -98,12 +98,28 @@
       margin-top: 15px;
     }
   }
-
+  .box-left,
+  .box-right {
+    margin-top: 15px;
+ 
+  }
   .css-dev-only-do-not-override-16qxzfl {
-    background-color: red;
     span {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px !important;
     }
   }
 }
+@media (max-width: 350px) {
+ 
+  .box-left,
+  .box-right {
+    margin-top: 15px;
+ 
+  }
+  .css-dev-only-do-not-override-16qxzfl {
+    span {
+      font-size: 12px !important;
+    }
+  }
+}
+
