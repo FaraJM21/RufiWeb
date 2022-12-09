@@ -4,8 +4,7 @@ import SelectGroups from "../selectgroups/SelectGroups";
 import search from "../../assets/img/searchwhite.svg";
 import "./searchbox.scss";
 import searchlogo from "../../assets/img/search.svg";
-import ModalSettings from "../modalsettings/ModalSettings";
-
+import ModalSettings from "../modalsettings/ModalSettings"
 function SearchBox() {
   const [showDropdown, setShowDropdown] = useState(false);
 
