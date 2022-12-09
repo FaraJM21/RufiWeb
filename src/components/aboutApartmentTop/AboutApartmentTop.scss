@@ -35,6 +35,7 @@
 
     .top {
       height: 110px;
+      gap: 5px;
       .price-text {
         font-weight: 600;
         font-size: 28px;
@@ -50,6 +51,7 @@
       flex-direction: column;
       justify-content: center;
       height: 150px;
+      gap: 5px;
       .apartment-size-text {
         font-weight: 500;
         font-size: 20px;
@@ -363,6 +365,10 @@
     .center,
     .bottom {
       margin-left: 0px;
+      gap: 2px !important;
+    }
+    .center{
+      margin: 0;
     }
   }
 }

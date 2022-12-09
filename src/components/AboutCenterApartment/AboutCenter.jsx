@@ -7,54 +7,39 @@ import Info from "../Info-Apartment/Info";
 
 const AboutCenter = () => {
   const [infoNum, setInfoNum] = useState(1);
-  const one = useRef(null);
-  const two = useRef(null);
-  const three = useRef(null);
+
   const handleChange = (num) => {
     if (num === 1) {
       setInfoNum(1);
-      one.current.style.fontWeight = 600;
-      one.current.style.borderBottom = "2px solid   rgba(12, 5, 5, 0.761) ";
-      three.current.style.fontWeight = 500;
-      two.current.style.fontWeight = 500;
-      three.current.style.borderBottom = "none";
-      two.current.style.borderBottom = "none";
     }
     if (num === 2) {
       setInfoNum(2);
-      two.current.style.borderBottom = "2px solid   rgba(12, 5, 5, 0.761) ";
-      two.current.style.fontWeight = 600;
-
-      three.current.style.borderBottom = "none";
-      three.current.style.fontWeight = 500;
-      one.current.style.borderBottom = "none";
-      one.current.style.fontWeight = 500;
     }
     if (num === 3) {
       setInfoNum(3);
-      three.current.style.borderBottom = "2px solid  rgba(12, 5, 5, 0.761)  ";
-      three.current.style.fontWeight = 600;
-
-      two.current.style.borderBottom = "none";
-      two.current.style.fontWeight = 500;
-      one.current.style.borderBottom = "none";
-      one.current.style.fontWeight = 500;
     }
   };
-
   return (
     <div className="A-centerInfo">
       <div className="left-info">
         <div className="Info-categories">
           <div className="categories">
-            <p onClick={() => handleChange(1)} ref={one}>
+            <p
+              onClick={() => handleChange(1)}
+              className={`${infoNum === 1 ? "active" : ""}`}
+            >
               Описание
             </p>
-
-            <p onClick={() => handleChange(2)} ref={two}>
+            <p
+              onClick={() => handleChange(2)}
+              className={`${infoNum === 2 ? "active" : ""}`}
+            >
               Характеристика
             </p>
-            <p onClick={() => handleChange(3)} ref={three}>
+            <p
+              onClick={() => handleChange(3)}
+              className={`${infoNum === 3 ? "active" : ""}`}
+            >
               Расположение
             </p>
           </div>

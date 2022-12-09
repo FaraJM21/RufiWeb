@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ApartmentsCarousel from "../../components/aboutApartmentsImgCarousel/ApartmentsCarousel";
 import telegramIcon from "../../assets/img/telegram.svg";
 import likeIcon from "../../assets/img/like.svg";
@@ -6,6 +6,23 @@ import icon from "../../assets/img/rectangle.svg";
 import house from "../../assets/img/house.jpg";
 import "./AboutApartmentTop.scss";
 const AboutApartmentTop = () => {
+  const [isWidth, setIsWidth] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+  window.scrollTo(0, 0);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    if (width < 1030) {
+      setIsWidth(true);
+    } else {
+      setIsWidth(false);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [width]);
+
   return (
     <div className="img-and-info">
       <div className="left-carousel">
@@ -41,7 +58,7 @@ const AboutApartmentTop = () => {
           <div>
             <div className="circle"></div>
             <p>Сергей</p>
-            <img src={icon} alt="" className="okIcon"/>
+            <img src={icon} alt="" className="okIcon" />
           </div>
           <div>
             <button className="show-btn">Показать телефон</button>
@@ -53,7 +70,10 @@ const AboutApartmentTop = () => {
             </div>
           </div>
         </div>
-        <div className="line"></div>
+        <div
+          className="line"
+          style={{ display: isWidth ? "block" : "none" }}
+        ></div>
       </div>
     </div>
   );
