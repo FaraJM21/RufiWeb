@@ -46,7 +46,7 @@ const AboutCenter = () => {
           <div className="bottom-line"></div>
           <Info infoNum={infoNum} />
           <Characteristcs infoNum={infoNum} />
-          {/* <Location infoNum={infoNum} /> */}
+          <Location infoNum={infoNum} />
         </div>
       </div>
       <div className="right-QrCode">

@@ -105,8 +105,9 @@
         justify-content: space-evenly;
         text-align: center;
 
-        button {
+        button,a {
           width: 6rem;
+          height: 100%;
           background: #d9d9d9;
           border-radius: 23.5px;
         }

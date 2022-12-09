@@ -8,6 +8,7 @@ import { Autoplay, Pagination, EffectFade } from "swiper";
 import { flat } from "../../data/data";
 import { HeartOutlined } from "@ant-design/icons";
 import location from "../../assets/img/location.svg";
+import { Link } from "react-router-dom";
 
 function MainSwiper() {
   return (
@@ -66,7 +67,7 @@ function MainSwiper() {
               </div>
 
               <div className="enroll">
-                <button>Смотреть</button>
+              <Link to={'/aboutapartment/1'}> <button>Смотреть</button></Link>
                 <p className="price">{item.price}</p>
               </div>
             </div>

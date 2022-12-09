@@ -80,7 +80,7 @@ function Apartment() {
                 </div>
 
                 <div className="enroll">
-                  <button>Смотреть</button>
+                 <Link to={'/aboutapartment/1'}> <button>Смотреть</button></Link>
                   <p className="price">{item.price}</p>
                 </div>
               </div>
