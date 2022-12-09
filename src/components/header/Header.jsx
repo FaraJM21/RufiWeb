@@ -27,12 +27,11 @@ function Header() {
   };
 
   useEffect(() => {
-
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  },);
+  });
 
   return (
     <header
