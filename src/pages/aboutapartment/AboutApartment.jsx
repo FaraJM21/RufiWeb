@@ -5,10 +5,12 @@ import AboutCenter from "../../components/AboutCenterApartment/AboutCenter";
 import "./AboutApartments.scss";
 
 function AboutApartment() {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
     document.querySelector('header').style.top = "0"
   }, []);
+
   return (
     <div className="main">
       <div className="container">

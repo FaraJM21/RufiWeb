@@ -334,7 +334,7 @@
   }
   .right-info {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0px !important;
     .bottom {
       gap: 0px;
       .okIcon {
@@ -367,8 +367,15 @@
       margin-left: 0px;
       gap: 2px !important;
     }
-    .center{
+    .center {
+      p {
+        font-size: 15px !important;
+      }
+      span {
+        font-size: 13px !important;
+      }
       margin: 0;
+      height: 75px !important;
     }
   }
 }
