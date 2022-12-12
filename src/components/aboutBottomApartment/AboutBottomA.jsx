@@ -5,7 +5,7 @@ const AboutBottomA = () => {
   return (
     <div className="apartments-bottom-cards">
       <HouseCard />
-
+      
       <HouseCard />
     </div>
   );

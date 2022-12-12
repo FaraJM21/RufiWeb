@@ -8,7 +8,7 @@ import "./AboutApartmentTop.scss";
 const AboutApartmentTop = () => {
   const [isWidth, setIsWidth] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  
+
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     if (width < 1030) {
