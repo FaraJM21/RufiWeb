@@ -33,7 +33,7 @@ const HouseCardCarousel = () => {
       mousewheel={true}
       navigation={open}
       autoplay={{ delay: 1000 }}
-      speed={600}
+      speed={1000}
       modules={[Navigation, Pagination, Autoplay, EffectFade]}
     >
       <SwiperSlide

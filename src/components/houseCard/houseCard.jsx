@@ -4,7 +4,6 @@ import telegram from "../../assets/img/telegram.svg";
 import like from "../../assets/img/like.svg";
 import HouseCardCarousel from "../houseCardCarousel/houseCardCarousel";
 import house from "../../assets/img/house.jpg";
-import { useNavigate } from "react-router-dom";
 const HouseCard = () => {
   return (
     <section className="houseCard">
@@ -28,6 +27,7 @@ const HouseCard = () => {
             ></div>
           </div>
         </div>
+
         <div className="content">
           <p className="title">2-комнатная квартира, 45м2</p>
           <div className="description">
