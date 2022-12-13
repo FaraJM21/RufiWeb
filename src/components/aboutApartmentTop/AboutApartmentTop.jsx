@@ -17,7 +17,6 @@ const AboutApartmentTop = () => {
       setIsWidth(false);
     }
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -78,5 +77,6 @@ const AboutApartmentTop = () => {
     </div>
   );
 };
+
 
 export default AboutApartmentTop;
