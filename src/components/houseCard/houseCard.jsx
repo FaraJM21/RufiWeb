@@ -27,6 +27,7 @@ const HouseCard = () => {
             ></div>
           </div>
         </div>
+
         <div className="content">
           <p className="title">2-комнатная квартира, 45м2</p>
           <div className="description">

@@ -22,4 +22,4 @@ const Pagination = () => {
     </section>
   );
 };
-export default Pagination
+export default Pagination;

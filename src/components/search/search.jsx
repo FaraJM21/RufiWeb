@@ -25,7 +25,7 @@ const Search = () => {
         <Select
           defaultValue="buy"
           dropdownStyle={{ backgroundColor: "white" }}
-          onChange={(e)=> handleChange(e.target.value)}
+          onChange={(e) => handleChange(e.target.value)}
           options={[
             {
               value: "buy",
@@ -115,7 +115,11 @@ const Search = () => {
 
       {/* mobile version */}
       <div className="mobile">
-        <input type="text" placeholder="Адресс, метро, район " className="search-input"/>
+        <input
+          type="text"
+          placeholder="Адресс, метро, район "
+          className="search-input"
+        />
         <p onClick={() => setMobileDropdown(!mobileDropdown)}>Фильтры</p>
 
         <div className={mobileDropdown ? "submenu active" : "submenu"}>
