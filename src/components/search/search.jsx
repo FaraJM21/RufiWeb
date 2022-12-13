@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import search from "../../assets/img/search.svg";
 import arrow from "../../assets/img/arrow.svg";
-import { Dropdown, Select } from "antd";
+import { Select } from "antd";
 const Search = () => {
   // for manual dropdown
   const [dropdown, setDropdown] = useState(false);

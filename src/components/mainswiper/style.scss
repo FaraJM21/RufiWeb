@@ -2,7 +2,7 @@
   width: 100%;
   height: 420px;
   display: none;
-  @media (max-width: 630px){
+  @media (max-width: 630px) {
     display: block;
   }
 
@@ -11,13 +11,13 @@
     height: 300px;
     display: flex;
     justify-content: center;
-    
+
     .profile-card {
       width: 80%;
       cursor: pointer;
       height: 100%;
 
-      @media (max-width:450px) {
+      @media (max-width: 450px) {
         width: 95%;
       }
       .innerSwiper {
@@ -64,11 +64,10 @@
         background: #ebebeb;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        gap: 10px;
-        padding: 10px 0;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 10px;
 
         p {
           font-style: normal;
@@ -79,6 +78,7 @@
 
         .underground {
           font-size: 0.8rem;
+          padding: 0 30px;
         }
         .price {
           font-weight: 600;
@@ -88,8 +88,11 @@
       }
 
       .info-top {
-        width: 100%;
-        text-align: center;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
       }
 
       .location {
@@ -100,12 +103,14 @@
 
       .about,
       .enroll {
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 0 20px;
         text-align: center;
 
-        button,a {
+        button,
+        a {
           width: 6rem;
           height: 100%;
           background: #d9d9d9;
@@ -115,6 +120,7 @@
 
       .enroll {
         height: 48px;
+
         align-items: center;
         button {
           width: 9rem;
@@ -132,4 +138,3 @@
     }
   }
 }
-

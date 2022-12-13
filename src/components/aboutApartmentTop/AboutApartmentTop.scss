@@ -4,7 +4,7 @@
   justify-content: space-between;
   .left-carousel {
     width: 785px;
-    height: 485px;
+    height: 450px;
     border-radius: 4px;
     img {
       border-radius: 4px;
@@ -15,8 +15,8 @@
     }
   }
   .right-info {
-    width: 441px;
-    height: 465px;
+    width: 400px;
+    height: 360px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -34,12 +34,15 @@
     }
 
     .top {
-      height: 110px;
+      height: 90px;
       gap: 5px;
       .price-text {
         font-weight: 600;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+      .price-below{
+        font-size: 20px;
       }
     }
     .line {
@@ -50,37 +53,37 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 150px;
+      height: 100px;
       gap: 5px;
       .apartment-size-text {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 20px;
       }
       .floor-text,
       .location-text {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 17px;
         line-height: 22px;
       }
     }
 
     .bottom {
-      height: 205px;
+      height: 150px;
       div {
         display: flex;
         align-items: center;
         gap: 15px;
       }
       .circle {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         background: #d9d9d9;
         border-radius: 50%;
       }
       p {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 29px;
       }
 
@@ -334,7 +337,7 @@
   }
   .right-info {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0px !important;
     .bottom {
       gap: 0px;
       .okIcon {
@@ -367,8 +370,15 @@
       margin-left: 0px;
       gap: 2px !important;
     }
-    .center{
+    .center {
+      p {
+        font-size: 15px !important;
+      }
+      span {
+        font-size: 13px !important;
+      }
       margin: 0;
+      height: 75px !important;
     }
   }
 }

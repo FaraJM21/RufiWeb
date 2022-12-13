@@ -50,11 +50,12 @@ const Characteristcs = (props) => {
   return (
     <div
       className="charasteristics"
-      style={{ display: props.infoNum === 2 ? "flex" : "none" }}>
+      style={{ display: props.infoNum === 2 ? "flex" : "none" }}
+    >
       <div className="table-box">
         {BoxArray.map((item, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="lines">
               <div className="line">
                 <div className="title">
                   <p>{item.title}</p>
@@ -63,7 +64,10 @@ const Characteristcs = (props) => {
                   <span>{item.info}</span>
                 </div>
               </div>
-              <div className="bottomline"></div>
+              <div
+                className="bottomline"
+                style={{ display: index === 10 ? "none" : "block" }}
+              ></div>
             </div>
           );
         })}

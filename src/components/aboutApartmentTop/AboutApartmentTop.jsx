@@ -8,7 +8,7 @@ import "./AboutApartmentTop.scss";
 const AboutApartmentTop = () => {
   const [isWidth, setIsWidth] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  
+
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     if (width < 1030) {
@@ -17,7 +17,6 @@ const AboutApartmentTop = () => {
       setIsWidth(false);
     }
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -78,5 +77,6 @@ const AboutApartmentTop = () => {
     </div>
   );
 };
+
 
 export default AboutApartmentTop;

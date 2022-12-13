@@ -32,7 +32,7 @@
   .offer-title {
     h3 {
       font-weight: 700;
-      font-size: 1.4rem;
+      font-size: 1rem;
       line-height: 34px;
     }
 
@@ -54,8 +54,6 @@
     width: 50%;
     display: flex;
     justify-content: flex-start;
-
-    // background-color: red;
   }
 
   .card {
@@ -76,12 +74,12 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 2px;
-      padding: 20px 20px;
+      padding: 16px;
       background: #f1f1f1;
 
       h4 {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 29px;
       }
 
@@ -134,15 +132,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .offer .card {
+    width: 60%;
+    height: 90%;
+  }
+}
+
 @media (max-width: 630px) {
   .offer .offerSwiper {
     display: flex;
   }
 
-  .offer .offerSwiper .card{
+  .offer .offerSwiper .card {
     width: 90%;
   }
-
 
   .offer .offer-title p {
     font-weight: 400;
@@ -160,9 +164,6 @@
       width: 314px;
       display: none;
       height: 200px;
-     
     }
   }
-
-  
 }
