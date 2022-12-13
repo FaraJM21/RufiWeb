@@ -61,9 +61,9 @@
   display: flex;
   justify-content: flex-start;
   gap: 30px;
-  row-gap: 200px;
+  row-gap: 220px;
   flex-wrap: wrap;
- 
+
   .flat-card {
     width: 16rem;
     height: 250px;
@@ -110,14 +110,14 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      padding: 5px 0px;
+      padding: 16px;
       text-align: center;
       gap: 15px;
 
       p {
         font-style: normal;
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 24px;
       }
 
@@ -126,7 +126,7 @@
       }
       .price {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 24px;
       }
     }
@@ -146,14 +146,16 @@
     .enroll {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       text-align: center;
-
-      button,a {
+      
+      button,
+      a {
         width: 6rem;
         background: #d9d9d9;
         height: 100%;
         border-radius: 23.5px;
+        font-size: 14px;
       }
     }
 
@@ -185,7 +187,7 @@
 }
 
 @media (max-width: 630px) {
-  .apartment{
+  .apartment {
     padding: 0;
   }
   .apartment-box {

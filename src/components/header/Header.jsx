@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import Drawers from "../Drawer/Drawers";
 function Header() {
   const [shadow, setShadow] = useState("");
-  const [top, setTop] = useState();
-  // const [isOpen, setOpen] = useState(false);
   let prevScrollpos = window.pageYOffset;
 
   const controlNavbar = () => {
@@ -17,11 +15,8 @@ function Header() {
     if (currentScrollPos === 0) {
       setShadow("");
     } else if (prevScrollpos > currentScrollPos) {
-      setTop(0);
-      setShadow("rgba(0, 0, 0, 0.24) 0px 3px 8px");
     } else {
-      setTop(-50);
-      setShadow("");
+      setShadow("rgba(0, 0, 0, 0.24) 0px 3px 8px");
     }
     prevScrollpos = currentScrollPos;
   };
@@ -37,8 +32,6 @@ function Header() {
     <header
       className="header"
       style={{
-        top: `${top}%`,
-
         boxShadow: shadow,
       }}
     >

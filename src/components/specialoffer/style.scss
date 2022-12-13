@@ -7,7 +7,7 @@
 
 .offer-title {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 34px;
   height: 60px;
 }
@@ -40,21 +40,21 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 15px 20px;
+    padding: 20px;
   }
 
   .top {
     h3 {
       font-style: normal;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 29px;
     }
 
     p {
       margin-top: 10px;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 24px;
       font-style: normal;
     }
@@ -67,26 +67,26 @@
   }
 
   .bottom {
-    height: 50px;
+    height: 40px;
     display: flex;
-    gap: 15px;
+    gap: 10px;
 
     button {
-      width: 10.2rem;
+      width: 10rem;
       height: 100%;
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 30px;
       background-color: #ffffff;
       color: #000000;
       font-weight: 500;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       padding: 0 10px;
     }
   }
 
   .icons {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +94,11 @@
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.3);
     cursor: pointer;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
   }
 
   .info-wrapper {
@@ -103,7 +108,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px 10px;
+    padding: 16px;
     text-align: center;
 
     h3 {
@@ -115,7 +120,7 @@
 
     p {
       font-weight: 400;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       line-height: 24px;
       font-style: normal;
     }

@@ -126,13 +126,13 @@
         align-items: center;
         background: #d9d9d9;
         border-radius: 23.5px;
-        img{
+        img {
           transition: 0.2s;
         }
-        &:hover{
-         img{
-          transform: scale(1.1);
-         }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -167,7 +167,7 @@
 
 @media (max-width: 500px) {
   .specialSwiper {
-    height: 500px;
+    height: 520px;
   }
 
   .slider-special {
@@ -184,19 +184,19 @@
     gap: 20px;
     padding: 10px 0;
 
-    .bottom{
-     gap: 10px;
+    .bottom {
+      gap: 10px;
 
-      .icons{
+      .icons {
         width: 30px;
         height: 30px;
-        img{
+        img {
           width: 50%;
           height: 50%;
         }
       }
 
-      button{
+      button {
         height: 30px;
       }
     }
