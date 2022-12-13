@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./AboutCenter.scss";
 import "../Info-Apartment/Info.scss";
 import Location from "../Info-Apartment/Location";

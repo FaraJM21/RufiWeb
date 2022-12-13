@@ -28,6 +28,7 @@ function Apartment() {
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe
+                title="mytitle"
                   className="gmap_iframe"
                   width="100%"
                   frameborder="0"
